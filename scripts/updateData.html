@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>更新数据</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+    .log { background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 4px; font-family: monospace; font-size: 12px; }
+    .success { color: green; }
+    .error { color: red; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>更新数据库数据</h1>
+  <button onclick="updateG37Records()">更新所有 G37 记录为 公牛</button>
+  <button onclick="updateFiveHoleRecords()">更新五孔记录为斜五孔</button>
+  <button onclick="loadRecords()">查看当前数据</button>
+  <div id="log"></div>
+
+  <script>
+    const supabaseUrl = 'https://chliujaxnfkgrmyuzqhs.supabase.co';
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNobGl1amF4bmZrZ3JteXV6cWhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI0MDYwNjUsImV4cCI6MjA5Nzk4MjA2NX0.65qT3txuS27WaP1t-2BpceqnKfynPfZx9qJ0lnBXGFA';
+    const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+    function log(msg, type = 'info') {
+      const div = document.createElement('div');
+      div.className = 'log ' + type;
+      div.textContent = msg;
+      document.getElementById('log').prepend(div);
+    }
+
+    async function updateG37Records() {
+      log('开始更新 G37 记录...');
+      
+      const { data, error } = await supabase
+        .from('purchases')
+        .select('id, model')
+        .like('model', 'G37%');
+      
+      if (error) {
+        log('获取记录失败: ' + error.message, 'error');
+        return;
+      }
+      
+      log(`找到 ${data.length} 条记录需要更新`);
+      
+      for (const record of data) {
+        const newModel = record.model.replace(/^G37\s*/, '公牛 ');
+        log(`更新 ${record.id}: ${record.model} -> ${newModel}`);
+        
+        const { error: updateError } = await supabase
+          .from('purchases')
+          .update({ model: newModel })
+          .eq('id', record.id);
+        
+        if (updateError) {
+          log(`更新失败 ${record.id}: ${updateError.message}`, 'error');
+        } else {
+          log(`更新成功 ${record.id}`, 'success');
+        }
+      }
+      
+      log('更新完成!', 'success');
+    }
+
+    async function updateFiveHoleRecords() {
+      log('开始更新五孔记录...');
+      
+      const { data, error } = await supabase
+        .from('purchases')
+        .select('id, model')
+        .like('model', '% 五孔');
+      
+      if (error) {
+        log('获取记录失败: ' + error.message, 'error');
+        return;
+      }
+      
+      log(`找到 ${data.length} 条记录需要更新`);
+      
+      for (const record of data) {
+        const newModel = record.model.replace(/\s五孔$/, ' 斜五孔');
+        log(`更新 ${record.id}: ${record.model} -> ${newModel}`);
+        
+        const { error: updateError } = await supabase
+          .from('purchases')
+          .update({ model: newModel })
+          .eq('id', record.id);
+        
+        if (updateError) {
+          log(`更新失败 ${record.id}: ${updateError.message}`, 'error');
+        } else {
+          log(`更新成功 ${record.id}`, 'success');
+        }
+      }
+      
+      log('更新完成!', 'success');
+    }
+
+    async function loadRecords() {
+      log('加载当前数据...');
+      
+      const { data, error } = await supabase
+        .from('purchases')
+        .select('id, model, price, channel')
+        .order('created_at', { ascending: false });
+      
+      if (error) {
+        log('获取记录失败: ' + error.message, 'error');
+        return;
+      }
+      
+      log(`共 ${data.length} 条记录`);
+      data.forEach(record => {
+        log(`${record.id}: ${record.model} - ¥${record.price} - ${record.channel}`);
+      });
+    }
+  </script>
+</body>
+</html>

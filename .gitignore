@@ -1,0 +1,21 @@
+node_modules
+dist
+dist-ssr
+*.local
+android
+ios
+.capacitor
+.trae
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.vercel

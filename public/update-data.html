@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数据更新工具</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+    h1 { color: #333; margin-bottom: 20px; }
+    .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .card h2 { font-size: 18px; margin-bottom: 12px; color: #333; }
+    .btn { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.2s; margin-right: 8px; margin-bottom: 8px; }
+    .btn-primary { background: #3b82f6; color: white; }
+    .btn-primary:hover { background: #2563eb; }
+    .btn-success { background: #10b981; color: white; }
+    .btn-success:hover { background: #059669; }
+    .btn-warning { background: #f59e0b; color: white; }
+    .btn-warning:hover { background: #d97706; }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .log { background: #1e1e1e; color: #d4d4d4; padding: 16px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 12px; max-height: 400px; overflow-y: auto; }
+    .log-line { margin-bottom: 4px; }
+    .log-success { color: #4ade80; }
+    .log-error { color: #f87171; }
+    .log-info { color: #60a5fa; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+    .stat { background: #f8fafc; padding: 12px; border-radius: 8px; text-align: center; }
+    .stat-value { font-size: 24px; font-weight: bold; color: #3b82f6; }
+    .stat-label { font-size: 12px; color: #64748b; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <h1>数据更新工具</h1>
+  
+  <div class="card">
+    <h2>数据统计</h2>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value" id="totalCount">-</div>
+        <div class="stat-label">总记录数</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="g37Count">-</div>
+        <div class="stat-label">G37开头记录</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="fiveHoleCount">-</div>
+        <div class="stat-label">五孔记录</div>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="loadStats()">刷新统计</button>
+  </div>
+
+  <div class="card">
+    <h2>批量更新操作</h2>
+    <button class="btn btn-success" onclick="updateG37ToGongniu()">将 G37 开头改为 公牛</button>
+    <button class="btn btn-warning" onclick="updateFiveHoleToXie()">将 五孔 改为 斜五孔</button>
+    <button class="btn btn-primary" onclick="loadAllRecords()">查看所有记录</button>
+  </div>
+
+  <div class="card">
+    <h2>操作日志</h2>
+    <div class="log" id="log"></div>
+  </div>
+
+  <script>
+    const supabaseUrl = 'https://chliujaxnfkgrmyuzqhs.supabase.co';
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNobGl1amF4bmZrZ3JteXV6cWhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI0MDYwNjUsImV4cCI6MjA5Nzk4MjA2NX0.65qT3txuS27WaP1t-2BpceqnKfynPfZx9qJ0lnBXGFA';
+    const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+    function log(msg, type = 'info') {
+      const logDiv = document.getElementById('log');
+      const line = document.createElement('div');
+      line.className = 'log-line log-' + type;
+      const time = new Date().toLocaleTimeString();
+      line.textContent = `[${time}] ${msg}`;
+      logDiv.prepend(line);
+    }
+
+    async function loadStats() {
+      log('正在加载统计数据...', 'info');
+      try {
+        const { data: allData, error: allError } = await supabase
+          .from('purchases')
+          .select('id', { count: 'exact' });
+        
+        if (allError) throw allError;
+        document.getElementById('totalCount').textContent = allData.length;
+
+        const { data: g37Data, error: g37Error } = await supabase
+          .from('purchases')
+          .select('id')
+          .like('model', 'G37%');
+        
+        if (g37Error) throw g37Error;
+        document.getElementById('g37Count').textContent = g37Data.length;
+
+        const { data: fiveHoleData, error: fiveHoleError } = await supabase
+          .from('purchases')
+          .select('id')
+          .like('model', '%五孔');
+        
+        if (fiveHoleError) throw fiveHoleError;
+        document.getElementById('fiveHoleCount').textContent = fiveHoleData.length;
+
+        log('统计数据加载完成', 'success');
+      } catch (error) {
+        log('加载失败: ' + error.message, 'error');
+      }
+    }
+
+    async function updateG37ToGongniu() {
+      if (!confirm('确定要将所有 G37 开头的记录改为 公牛 开头吗？')) return;
+      
+      log('开始更新 G37 记录...', 'info');
+      
+      try {
+        const { data, error } = await supabase
+          .from('purchases')
+          .select('id, model')
+          .like('model', 'G37%');
+        
+        if (error) throw error;
+        
+        log(`找到 ${data.length} 条记录需要更新`, 'info');
+        
+        let successCount = 0;
+        let failCount = 0;
+        
+        for (const record of data) {
+          const newModel = record.model.replace(/^G37\s*/, '公牛 ');
+          log(`更新 ${record.id}: ${record.model} -> ${newModel}`);
+          
+          const { error: updateError } = await supabase
+            .from('purchases')
+            .update({ model: newModel })
+            .eq('id', record.id);
+          
+          if (updateError) {
+            log(`更新失败 ${record.id}: ${updateError.message}`, 'error');
+            failCount++;
+          } else {
+            log(`更新成功 ${record.id}`, 'success');
+            successCount++;
+          }
+        }
+        
+        log(`更新完成！成功: ${successCount}, 失败: ${failCount}`, 'success');
+        loadStats();
+      } catch (error) {
+        log('更新失败: ' + error.message, 'error');
+      }
+    }
+
+    async function updateFiveHoleToXie() {
+      if (!confirm('确定要将所有 五孔 改为 斜五孔 吗？')) return;
+      
+      log('开始更新五孔记录...', 'info');
+      
+      try {
+        const { data, error } = await supabase
+          .from('purchases')
+          .select('id, model')
+          .like('model', '% 五孔');
+        
+        if (error) throw error;
+        
+        log(`找到 ${data.length} 条记录需要更新`, 'info');
+        
+        let successCount = 0;
+        let failCount = 0;
+        
+        for (const record of data) {
+          const newModel = record.model.replace(/\s五孔$/, ' 斜五孔');
+          log(`更新 ${record.id}: ${record.model} -> ${newModel}`);
+          
+          const { error: updateError } = await supabase
+            .from('purchases')
+            .update({ model: newModel })
+            .eq('id', record.id);
+          
+          if (updateError) {
+            log(`更新失败 ${record.id}: ${updateError.message}`, 'error');
+            failCount++;
+          } else {
+            log(`更新成功 ${record.id}`, 'success');
+            successCount++;
+          }
+        }
+        
+        log(`更新完成！成功: ${successCount}, 失败: ${failCount}`, 'success');
+        loadStats();
+      } catch (error) {
+        log('更新失败: ' + error.message, 'error');
+      }
+    }
+
+    async function loadAllRecords() {
+      log('加载所有记录...', 'info');
+      
+      try {
+        const { data, error } = await supabase
+          .from('purchases')
+          .select('id, model, price, channel')
+          .order('created_at', { ascending: false });
+        
+        if (error) throw error;
+        
+        log(`共 ${data.length} 条记录:`, 'info');
+        data.forEach(record => {
+          log(`  ${record.model} - ¥${record.price} - ${record.channel}`);
+        });
+      } catch (error) {
+        log('加载失败: ' + error.message, 'error');
+      }
+    }
+
+    loadStats();
+  </script>
+</body>
+</html>
