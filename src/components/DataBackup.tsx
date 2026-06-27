@@ -3,7 +3,7 @@ import { Cloud, Wifi, Clock, RefreshCw, CheckCircle, XCircle } from 'lucide-reac
 import { usePurchaseStore } from '@/store/purchaseStore';
 
 export default function DataBackup() {
-  const { refreshCloud, cloudStatus, lastSyncTime, purchases, loading } = usePurchaseStore();
+  const { refreshCloud, cloudStatus, cloudError, lastSyncTime, purchases, loading } = usePurchaseStore();
   const [refreshing, setRefreshing] = useState(false);
 
   useEffect(() => {
@@ -74,6 +74,12 @@ export default function DataBackup() {
           <p className="text-lg font-bold text-indigo-600">{purchases.length} 条</p>
         </div>
       </div>
+
+      {cloudStatus === 'disconnected' && cloudError && (
+        <div className="mt-4 p-3 bg-red-50 border border-red-100 rounded-xl">
+          <p className="text-xs text-red-600 break-all">错误：{cloudError}</p>
+        </div>
+      )}
 
       <div className="mt-4 flex items-center justify-between text-sm text-gray-500">
         <div className="flex items-center gap-2">

@@ -11,6 +11,7 @@ interface PurchaseStore {
   searchTerm: string;
   channelFilter: string;
   cloudStatus: 'connected' | 'disconnected' | 'checking';
+  cloudError: string | null;
   lastSyncTime: string | null;
   loadPurchases: () => Promise<void>;
   addPurchase: (data: PurchaseFormData) => Promise<boolean>;
@@ -32,6 +33,7 @@ export const usePurchaseStore = create<PurchaseStore>((set, get) => ({
   searchTerm: '',
   channelFilter: '',
   cloudStatus: 'checking',
+  cloudError: null,
   lastSyncTime: null,
 
   loadPurchases: async () => {
@@ -44,7 +46,7 @@ export const usePurchaseStore = create<PurchaseStore>((set, get) => ({
 
       if (error) {
         console.error('Load purchases failed:', error);
-        set({ cloudStatus: 'disconnected', loading: false });
+        set({ cloudStatus: 'disconnected', cloudError: error.message || String(error), loading: false });
         return;
       }
 
@@ -69,7 +71,7 @@ export const usePurchaseStore = create<PurchaseStore>((set, get) => ({
       });
     } catch (error) {
       console.error('Load purchases error:', error);
-      set({ cloudStatus: 'disconnected', loading: false });
+      set({ cloudStatus: 'disconnected', cloudError: error instanceof Error ? error.message : String(error), loading: false });
     }
   },
 
@@ -295,6 +297,7 @@ export const usePurchaseStore = create<PurchaseStore>((set, get) => ({
   },
 
   refreshCloud: async () => {
+    set({ cloudError: null });
     await get().loadPurchases();
   },
 }));

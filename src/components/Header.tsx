@@ -8,7 +8,10 @@ export function Header() {
   const isAdd = location.pathname === '/add';
 
   return (
-    <header className="bg-primary-600 text-white shadow-lg">
+    <header
+      className="bg-primary-600 text-white shadow-lg"
+      style={{ paddingTop: 'env(safe-area-inset-top)' }}
+    >
       <div className="max-w-7xl mx-auto px-4 py-3 md:py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">

@@ -49,7 +49,10 @@ export default function UpdateBanner() {
   if (!showUpdate) return null;
 
   return (
-    <div className="fixed top-4 left-4 right-4 z-50 md:left-auto md:right-4 md:w-80">
+    <div
+      className="fixed left-4 right-4 z-50 md:left-auto md:right-4 md:w-80"
+      style={{ top: 'calc(1rem + env(safe-area-inset-top))' }}
+    >
       <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-4">
         <div className="flex items-start justify-between mb-3">
           <div className="flex items-center gap-2">
