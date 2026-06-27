@@ -1,5 +1,6 @@
 import { CapacitorUpdater } from '@capgo/capacitor-updater';
 import { isNativeApp } from '@/utils/platform';
+import appVersion from '../../public/version.json';
 
 const UPDATE_SERVER = 'https://1-nine-eta-34.vercel.app/update';
 const VERSION_FILE = 'version.json';
@@ -40,15 +41,17 @@ export class UpdateService {
     // 告知 Capgo 当前 bundle 已正常加载
     await CapacitorUpdater.notifyAppReady();
 
-    const packageVersion = (import.meta as any).env?.npm_package_version || '1.0.0';
     this.currentVersion = {
-      version: packageVersion,
-      buildNumber: 1,
+      version: appVersion.version,
+      buildNumber: appVersion.buildNumber,
     };
   }
 
   getCurrentVersion(): VersionInfo {
-    return this.currentVersion || { version: '1.0.0', buildNumber: 1 };
+    return this.currentVersion || {
+      version: appVersion.version,
+      buildNumber: appVersion.buildNumber,
+    };
   }
 
   async checkForUpdate(): Promise<UpdateResult> {
@@ -118,8 +121,10 @@ export class UpdateService {
   async resetToDefault(): Promise<void> {
     if (!isNativeApp()) return;
     await CapacitorUpdater.reset();
-    const packageVersion = (import.meta as any).env?.npm_package_version || '1.0.0';
-    this.currentVersion = { version: packageVersion, buildNumber: 1 };
+    this.currentVersion = {
+      version: appVersion.version,
+      buildNumber: appVersion.buildNumber,
+    };
   }
 }
 
