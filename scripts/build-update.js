@@ -40,11 +40,7 @@ function buildUpdateBundle() {
   }
   fs.mkdirSync(updateDir, { recursive: true });
 
-  // 读取并自动递增 buildNumber
   const version = JSON.parse(fs.readFileSync(versionFile, 'utf-8'));
-  version.buildNumber = (version.buildNumber || 1) + 1;
-  fs.writeFileSync(versionFile, JSON.stringify(version, null, 2));
-  console.log(`版本号已递增: ${version.version} (build ${version.buildNumber})`);
 
   const assetsDir = path.join(distDir, 'assets');
   const assetFiles = fs.existsSync(assetsDir) ? getAllFiles(assetsDir, 'assets') : [];

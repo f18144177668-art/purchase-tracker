@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "build:update": "node scripts/build-update.js",
-    "build:all": "tsc && vite build && node scripts/build-update.js",
+    "build:all": "tsc && node scripts/increment-version.js && vite build && node scripts/build-update.js",
     "preview": "vite preview",
     "check": "tsc --noEmit"
   },
