@@ -1,9 +1,1 @@
-import { PurchaseForm } from '@/components/PurchaseForm';
-
-export function EditPage() {
-  return (
-    <div className="max-w-6xl mx-auto px-4 py-6">
-      <PurchaseForm />
-    </div>
-  );
-}
+aW1wb3J0IHsgUHVyY2hhc2VGb3JtIH0gZnJvbSAnQC9jb21wb25lbnRzL1B1cmNoYXNlRm9ybSc7CgpleHBvcnQgZnVuY3Rpb24gRWRpdFBhZ2UoKSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJwYWdlLWNvbnRhaW5lciI+CiAgICAgIDxQdXJjaGFzZUZvcm0gLz4KICAgIDwvZGl2PgogICk7Cn0K
