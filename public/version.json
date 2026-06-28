@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "buildNumber": 2,
+  "buildNumber": 3,
   "updateUrl": "https://1-nine-eta-34.vercel.app/update/",
   "apkUrl": "",
-  "releaseNotes": "重新设计 APP 页面：优化首页、统计页、表单布局；修复 GitHub API 推送导致的 Base64 编码问题"
+  "releaseNotes": "娴嬭瘯鐑洿鏂帮細build 4 鎺ㄩ€侊紝楠岃瘉 APP 鍐呭脊绐楁洿鏂版祦绋?
 }
