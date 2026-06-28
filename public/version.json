@@ -1,7 +1,1 @@
-{
-  "version": "1.0.0",
-  "buildNumber": 3,
-  "updateUrl": "https://1-nine-eta-34.vercel.app/update/",
-  "apkUrl": "",
-  "releaseNotes": "测试热更新：build 4 推送，验证 APP 内弹窗更新流程"
-}
+{"version":"1.0.0","buildNumber":4,"updateUrl":"https://1-nine-eta-34.vercel.app/update/","apkUrl":"","releaseNotes":"build 5 热更新测试"}
