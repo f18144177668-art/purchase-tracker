@@ -23,15 +23,15 @@ async function parseJsonSafely(response: Response) {
   try {
     return JSON.parse(text);
   } catch {
-    throw new Error(`??????:${text.slice(0, 100)}`);
+    throw new Error(`服务返回异常：${text.slice(0, 100)}`);
   }
 }
 
-// ?????? Vite ??
+// 开发环境使用 Vite 代理
 async function getCaptchaDev(): Promise<CaptchaResult> {
   const res = await fetch(`${DEV_API_BASE}?action=captcha`);
   const data = await parseJsonSafely(res);
-  if (!data.success) throw new Error(data.error || '???????');
+  if (!data.success) throw new Error(data.error || '获取验证码失败');
   return { sessionId: data.sessionId, captchaImage: data.captchaImage };
 }
 
@@ -46,11 +46,11 @@ async function verifyAntiCounterfeitDev(
     body: JSON.stringify({ pcode, vcode, sessionId }),
   });
   const data = await parseJsonSafely(res);
-  if (!data.success) throw new Error(data.error || '????');
+  if (!data.success) throw new Error(data.error || '查询失败');
   return { isGenuine: data.isGenuine, status: data.status, message: data.message };
 }
 
-// ????(APP)????????
+// 生产环境（APP）直接请求公牛官网
 async function getCaptchaProd(): Promise<CaptchaResult> {
   const response = await fetch(GONGNIU_BASE + CAPTCHA_PATH, {
     credentials: 'include',
@@ -61,7 +61,7 @@ async function getCaptchaProd(): Promise<CaptchaResult> {
   });
 
   if (!response.ok) {
-    throw new Error(`???????:${response.status}`);
+    throw new Error(`获取验证码失败：${response.status}`);
   }
 
   const cookie = response.headers.get('set-cookie') || '';
@@ -98,7 +98,7 @@ async function verifyAntiCounterfeitProd(
   });
 
   if (!response.ok) {
-    throw new Error(`??????:${response.status}`);
+    throw new Error(`查询请求失败：${response.status}`);
   }
 
   const data = await parseJsonSafely(response);
@@ -112,7 +112,7 @@ async function verifyAntiCounterfeitProd(
 export async function getCaptcha(): Promise<CaptchaResult> {
   if (isDev) return getCaptchaDev();
   if (isNativeApp()) return getCaptchaProd();
-  throw new Error('?????? APP ???');
+  throw new Error('防伪查询请在 APP 中使用');
 }
 
 export async function verifyAntiCounterfeit(
@@ -122,5 +122,5 @@ export async function verifyAntiCounterfeit(
 ): Promise<VerifyResult> {
   if (isDev) return verifyAntiCounterfeitDev(pcode, vcode, sessionId);
   if (isNativeApp()) return verifyAntiCounterfeitProd(pcode, vcode, sessionId);
-  throw new Error('?????? APP ???');
+  throw new Error('防伪查询请在 APP 中使用');
 }
