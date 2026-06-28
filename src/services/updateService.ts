@@ -2,7 +2,7 @@ import { CapacitorUpdater } from '@capgo/capacitor-updater';
 import { isNativeApp } from '@/utils/platform';
 import appVersion from '../../public/version.json';
 
-const UPDATE_SERVER = 'https://1-nine-eta-34.vercel.app/update';
+const UPDATE_SERVER = 'https://f18144177668-art.github.io/purchase-tracker/update';
 const VERSION_FILE = 'version.json';
 
 export interface VersionInfo {
@@ -38,7 +38,7 @@ export class UpdateService {
   async init(): Promise<void> {
     if (!isNativeApp()) return;
 
-    // 告知 Capgo 当前 bundle 已正常加载
+    // ?? Capgo ?? bundle ?????
     await CapacitorUpdater.notifyAppReady();
 
     this.currentVersion = {
@@ -57,7 +57,7 @@ export class UpdateService {
   async checkForUpdate(): Promise<UpdateResult> {
     try {
       const response = await fetch(`${UPDATE_SERVER}/${VERSION_FILE}?t=${Date.now()}`);
-      if (!response.ok) throw new Error('获取版本信息失败');
+      if (!response.ok) throw new Error('????????');
       const latestVersion: VersionInfo = await response.json();
 
       const current = this.getCurrentVersion();
@@ -73,7 +73,7 @@ export class UpdateService {
         canHotUpdate,
       };
     } catch (error) {
-      console.error('检查更新失败:', error);
+      console.error('??????:', error);
       return {
         hasUpdate: false,
         currentVersion: this.getCurrentVersion().version,
@@ -88,14 +88,14 @@ export class UpdateService {
 
     try {
       const versionResponse = await fetch(`${UPDATE_SERVER}/${VERSION_FILE}?t=${Date.now()}`);
-      if (!versionResponse.ok) throw new Error('获取版本信息失败');
+      if (!versionResponse.ok) throw new Error('????????');
       const latestVersion: VersionInfo = await versionResponse.json();
 
       if (!latestVersion.zipUrl) {
-        throw new Error('没有可用的热更新包');
+        throw new Error('?????????');
       }
 
-      // Capgo 只支持整数版本号作为 bundle id
+      // Capgo ?????????? bundle id
       const bundleId = latestVersion.buildNumber;
 
       if (onProgress) onProgress(0);
@@ -107,13 +107,13 @@ export class UpdateService {
 
       if (onProgress) onProgress(100);
 
-      // 下载成功后立即应用新 bundle
+      // ?????????? bundle
       await CapacitorUpdater.set({ id: bundle.id });
 
       this.currentVersion = latestVersion;
       return true;
     } catch (error) {
-      console.error('下载更新失败:', error);
+      console.error('??????:', error);
       return false;
     }
   }
