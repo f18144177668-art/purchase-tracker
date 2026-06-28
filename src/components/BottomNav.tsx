@@ -1,1 +1,52 @@
-aW1wb3J0IHsgSG9tZSwgUGx1c0NpcmNsZSwgQmFyQ2hhcnQzIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IHsgdXNlTG9jYXRpb24sIHVzZU5hdmlnYXRlIH0gZnJvbSAncmVhY3Qtcm91dGVyLWRvbSc7CmltcG9ydCB7IGlzTmF0aXZlQXBwIH0gZnJvbSAnQC91dGlscy9wbGF0Zm9ybSc7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBCb3R0b21OYXYoKSB7CiAgY29uc3QgbG9jYXRpb24gPSB1c2VMb2NhdGlvbigpOwogIGNvbnN0IG5hdmlnYXRlID0gdXNlTmF2aWdhdGUoKTsKCiAgLy8g5qGM6Z2i56uv5LiN5pi+56S65bqV6YOo5a+86IiqCiAgaWYgKCFpc05hdGl2ZUFwcCgpKSB7CiAgICByZXR1cm4gbnVsbDsKICB9CgogIGNvbnN0IG5hdkl0ZW1zID0gWwogICAgeyBwYXRoOiAnLycsIGljb246IEhvbWUsIGxhYmVsOiAn6K6w5b2VJyB9LAogICAgeyBwYXRoOiAnL2FkZCcsIGljb246IFBsdXNDaXJjbGUsIGxhYmVsOiAn5re75YqgJyB9LAogICAgeyBwYXRoOiAnL3N0YXRzJywgaWNvbjogQmFyQ2hhcnQzLCBsYWJlbDogJ+e7n+iuoScgfSwKICBdOwoKICByZXR1cm4gKAogICAgPG5hdiBjbGFzc05hbWU9ImJnLXdoaXRlIGJvcmRlci10IGJvcmRlci1ncmF5LTEwMCBzYWZlLWFyZWEtYm90dG9tIHotMzAgc2hyaW5rLTAiPgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBqdXN0aWZ5LWFyb3VuZCBpdGVtcy1jZW50ZXIgaC0xNiI+CiAgICAgICAge25hdkl0ZW1zLm1hcCgoaXRlbSkgPT4gewogICAgICAgICAgY29uc3QgSWNvbiA9IGl0ZW0uaWNvbjsKICAgICAgICAgIGNvbnN0IGlzQWN0aXZlID0gbG9jYXRpb24ucGF0aG5hbWUgPT09IGl0ZW0ucGF0aDsKICAgICAgICAgIGNvbnN0IGlzQWRkQnV0dG9uID0gaXRlbS5wYXRoID09PSAnL2FkZCc7CgogICAgICAgICAgcmV0dXJuICgKICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgIGtleT17aXRlbS5wYXRofQogICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IG5hdmlnYXRlKGl0ZW0ucGF0aCl9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZmxleC0xIGgtZnVsbCB0cmFuc2l0aW9uLWNvbG9ycyBhY3RpdmU6c2NhbGUtOTUgJHsKICAgICAgICAgICAgICAgIGlzQWN0aXZlID8gJ3RleHQtcHJpbWFyeS02MDAnIDogJ3RleHQtZ3JheS00MDAnCiAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgID4KICAgICAgICAgICAgICB7aXNBZGRCdXR0b24gPyAoCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy0xMiBoLTEyIC1tdC00IGJnLXByaW1hcnktNjAwIHJvdW5kZWQtZnVsbCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBzaGFkb3ctbWQgYWN0aXZlOmJnLXByaW1hcnktNzAwIj4KICAgICAgICAgICAgICAgICAgPEljb24gY2xhc3NOYW1lPSJ3LTYgaC02IHRleHQtd2hpdGUiIC8+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICApIDogKAogICAgICAgICAgICAgICAgPEljb24gY2xhc3NOYW1lPXtgdy01IGgtNSAke2lzQWN0aXZlID8gJ3N0cm9rZS1bMi41cHhdJyA6ICdzdHJva2UtMid9YH0gLz4KICAgICAgICAgICAgICApfQogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT17YHRleHQtWzExcHhdIG10LTEgJHtpc0FkZEJ1dHRvbiA/ICdtdC0wLjUnIDogJyd9YH0+CiAgICAgICAgICAgICAgICB7aXRlbS5sYWJlbH0KICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgKTsKICAgICAgICB9KX0KICAgICAgPC9kaXY+CiAgICA8L25hdj4KICApOwp9Cg==
+import { Home, PlusCircle, BarChart3 } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { isNativeApp } from '@/utils/platform';
+
+export default function BottomNav() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // 桌面端不显示底部导航
+  if (!isNativeApp()) {
+    return null;
+  }
+
+  const navItems = [
+    { path: '/', icon: Home, label: '记录' },
+    { path: '/add', icon: PlusCircle, label: '添加' },
+    { path: '/stats', icon: BarChart3, label: '统计' },
+  ];
+
+  return (
+    <nav className="bg-white border-t border-gray-100 safe-area-bottom z-30 shrink-0">
+      <div className="flex justify-around items-center h-16">
+        {navItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = location.pathname === item.path;
+          const isAddButton = item.path === '/add';
+
+          return (
+            <button
+              key={item.path}
+              onClick={() => navigate(item.path)}
+              className={`flex flex-col items-center justify-center flex-1 h-full transition-colors active:scale-95 ${
+                isActive ? 'text-primary-600' : 'text-gray-400'
+              }`}
+            >
+              {isAddButton ? (
+                <div className="w-12 h-12 -mt-4 bg-primary-600 rounded-full flex items-center justify-center shadow-md active:bg-primary-700">
+                  <Icon className="w-6 h-6 text-white" />
+                </div>
+              ) : (
+                <Icon className={`w-5 h-5 ${isActive ? 'stroke-[2.5px]' : 'stroke-2'}`} />
+              )}
+              <span className={`text-[11px] mt-1 ${isAddButton ? 'mt-0.5' : ''}`}>
+                {item.label}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+    </nav>
+  );
+}

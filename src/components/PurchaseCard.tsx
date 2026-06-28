@@ -1,1 +1,106 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IEVkaXQyLCBUcmFzaDIgfSBmcm9tICdsdWNpZGUtcmVhY3QnOwppbXBvcnQgeyBMaW5rIH0gZnJvbSAncmVhY3Qtcm91dGVyLWRvbSc7CmltcG9ydCB7IHVzZVB1cmNoYXNlU3RvcmUgfSBmcm9tICdAL3N0b3JlL3B1cmNoYXNlU3RvcmUnOwppbXBvcnQgeyBQdXJjaGFzZSB9IGZyb20gJ0AvdHlwZXMnOwppbXBvcnQgeyBDaGFubmVsSWNvbiB9IGZyb20gJy4vQ2hhbm5lbEljb24nOwppbXBvcnQgeyBnZXRTd2l0Y2hJY29uLCBnZXRTd2l0Y2hUeXBlLCBnZXRCcmFuZCB9IGZyb20gJ0AvdXRpbHMvbW9kZWxVdGlscyc7CgppbnRlcmZhY2UgUHVyY2hhc2VDYXJkUHJvcHMgewogIHB1cmNoYXNlOiBQdXJjaGFzZTsKfQoKZXhwb3J0IGZ1bmN0aW9uIFB1cmNoYXNlQ2FyZCh7IHB1cmNoYXNlIH06IFB1cmNoYXNlQ2FyZFByb3BzKSB7CiAgY29uc3QgZGVsZXRlUHVyY2hhc2UgPSB1c2VQdXJjaGFzZVN0b3JlKChzdGF0ZSkgPT4gc3RhdGUuZGVsZXRlUHVyY2hhc2UpOwogIGNvbnN0IFtkZWxldGluZywgc2V0RGVsZXRpbmddID0gdXNlU3RhdGUoZmFsc2UpOwoKICBjb25zdCBoYW5kbGVEZWxldGUgPSBhc3luYyAoKSA9PiB7CiAgICBpZiAod2luZG93LmNvbmZpcm0oYOehruWumuWIoOmZpOWei+WPtyAiJHtwdXJjaGFzZS5tb2RlbH0iIOeahOiusOW9leWQl++8n2ApKSB7CiAgICAgIHNldERlbGV0aW5nKHRydWUpOwogICAgICBhd2FpdCBkZWxldGVQdXJjaGFzZShwdXJjaGFzZS5pZCk7CiAgICAgIHNldERlbGV0aW5nKGZhbHNlKTsKICAgIH0KICB9OwoKICBjb25zdCBmb3JtYXREYXRlID0gKGRhdGVTdHJpbmc6IHN0cmluZykgPT4gewogICAgY29uc3QgZGF0ZSA9IG5ldyBEYXRlKGRhdGVTdHJpbmcpOwogICAgcmV0dXJuIGRhdGUudG9Mb2NhbGVEYXRlU3RyaW5nKCd6aC1DTicsIHsKICAgICAgbW9udGg6ICcyLWRpZ2l0JywKICAgICAgZGF5OiAnMi1kaWdpdCcsCiAgICAgIGhvdXI6ICcyLWRpZ2l0JywKICAgICAgbWludXRlOiAnMi1kaWdpdCcsCiAgICB9KTsKICB9OwoKICBjb25zdCBzd2l0Y2hUeXBlID0gZ2V0U3dpdGNoVHlwZShwdXJjaGFzZS5tb2RlbCk7CiAgY29uc3QgYnJhbmQgPSBnZXRCcmFuZChwdXJjaGFzZS5tb2RlbCk7CiAgY29uc3Qgc3dpdGNoSWNvbiA9IGdldFN3aXRjaEljb24ocHVyY2hhc2UubW9kZWwpOwogIGNvbnN0IHRvdGFsID0gcHVyY2hhc2UucHJpY2UgKiBwdXJjaGFzZS5xdWFudGl0eTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJjYXJkIHAtNCBjYXJkLXByZXNzIj4KICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtc3RhcnQgZ2FwLTMiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTExIGgtMTEgYmctcHJpbWFyeS02MDAgcm91bmRlZC14bCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciB0ZXh0LXhsIHNocmluay0wIHNoYWRvdy1zbSI+CiAgICAgICAgICB7c3dpdGNoSWNvbn0KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIG1pbi13LTAiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtc3RhcnQganVzdGlmeS1iZXR3ZWVuIGdhcC0yIj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1pbi13LTAiPgogICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9InRleHQtYmFzZSBmb250LWJvbGQgdGV4dC1ncmF5LTkwMCBsaW5lLWNsYW1wLTEiPntwdXJjaGFzZS5tb2RlbH08L2gzPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMS41IG10LTEiPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJiYWRnZSBiYWRnZS1ncmF5Ij57YnJhbmR9PC9zcGFuPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJiYWRnZSBiYWRnZS1wcmltYXJ5Ij57c3dpdGNoVHlwZX08L3NwYW4+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTAuNSBzaHJpbmstMCAtbXItMSI+CiAgICAgICAgICAgICAgPExpbmsKICAgICAgICAgICAgICAgIHRvPXtgL2VkaXQvJHtwdXJjaGFzZS5pZH1gfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJwLTIgdGV4dC1ncmF5LTQwMCBob3Zlcjp0ZXh0LXByaW1hcnktNjAwIGhvdmVyOmJnLXByaW1hcnktNTAgcm91bmRlZC1sZyB0cmFuc2l0aW9uLWNvbG9ycyIKICAgICAgICAgICAgICAgIHRpdGxlPSLnvJbovpEiCiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgPEVkaXQyIGNsYXNzTmFtZT0idy00IGgtNCIgLz4KICAgICAgICAgICAgICA8L0xpbms+CiAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgb25DbGljaz17aGFuZGxlRGVsZXRlfQogICAgICAgICAgICAgICAgZGlzYWJsZWQ9e2RlbGV0aW5nfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJwLTIgdGV4dC1ncmF5LTQwMCBob3Zlcjp0ZXh0LWRhbmdlci02MDAgaG92ZXI6YmctZGFuZ2VyLTUwIHJvdW5kZWQtbGcgdHJhbnNpdGlvbi1jb2xvcnMgZGlzYWJsZWQ6b3BhY2l0eS01MCIKICAgICAgICAgICAgICAgIHRpdGxlPSLliKDpmaQiCiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAge2RlbGV0aW5nID8gKAogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy00IGgtNCBib3JkZXItMiBib3JkZXItZGFuZ2VyLTQwMCBib3JkZXItdC10cmFuc3BhcmVudCByb3VuZGVkLWZ1bGwgYW5pbWF0ZS1zcGluIiAvPgogICAgICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICAgICAgPFRyYXNoMiBjbGFzc05hbWU9InctNCBoLTQiIC8+CiAgICAgICAgICAgICAgICApfQogICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gbXQtMyI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWJhc2VsaW5lIGdhcC00Ij4KICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS01MDAgbWItMC41Ij7mlbDph488L3A+CiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtc20gZm9udC1ib2xkIHRleHQtZ3JheS05MDAiPntwdXJjaGFzZS5xdWFudGl0eX08L3A+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyYXktNTAwIG1iLTAuNSI+5Y2V5Lu3PC9wPgogICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtYm9sZCB0ZXh0LXByaW1hcnktNjAwIj7CpXtwdXJjaGFzZS5wcmljZS50b0ZpeGVkKDIpfTwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LXJpZ2h0Ij4KICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgdGV4dC1ncmF5LTUwMCBtYi0wLjUiPuWwj+iuoTwvcD4KICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtd2FybmluZy02MDAiPsKle3RvdGFsLnRvRml4ZWQoMil9PC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gbXQtMyBwdC0zIGJvcmRlci10IGJvcmRlci1ncmF5LTEwMCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMS41Ij4KICAgICAgICAgICAgICA8Q2hhbm5lbEljb24gY2hhbm5lbD17cHVyY2hhc2UuY2hhbm5lbH0gc2l6ZT17MTZ9IC8+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS02MDAiPntwdXJjaGFzZS5jaGFubmVsfTwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyYXktNDAwIj57Zm9ybWF0RGF0ZShwdXJjaGFzZS5jcmVhdGVkQXQpfTwvc3Bhbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0K
+import { useState } from 'react';
+import { Edit2, Trash2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { usePurchaseStore } from '@/store/purchaseStore';
+import { Purchase } from '@/types';
+import { ChannelIcon } from './ChannelIcon';
+import { getSwitchIcon, getSwitchType, getBrand } from '@/utils/modelUtils';
+
+interface PurchaseCardProps {
+  purchase: Purchase;
+}
+
+export function PurchaseCard({ purchase }: PurchaseCardProps) {
+  const deletePurchase = usePurchaseStore((state) => state.deletePurchase);
+  const [deleting, setDeleting] = useState(false);
+
+  const handleDelete = async () => {
+    if (window.confirm(`确定删除型号 "${purchase.model}" 的记录吗？`)) {
+      setDeleting(true);
+      await deletePurchase(purchase.id);
+      setDeleting(false);
+    }
+  };
+
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('zh-CN', {
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+    });
+  };
+
+  const switchType = getSwitchType(purchase.model);
+  const brand = getBrand(purchase.model);
+  const switchIcon = getSwitchIcon(purchase.model);
+  const total = purchase.price * purchase.quantity;
+
+  return (
+    <div className="card p-4 card-press">
+      <div className="flex items-start gap-3">
+        <div className="w-11 h-11 bg-primary-600 rounded-xl flex items-center justify-center text-xl shrink-0 shadow-sm">
+          {switchIcon}
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-start justify-between gap-2">
+            <div className="min-w-0">
+              <h3 className="text-base font-bold text-gray-900 line-clamp-1">{purchase.model}</h3>
+              <div className="flex items-center gap-1.5 mt-1">
+                <span className="badge badge-gray">{brand}</span>
+                <span className="badge badge-primary">{switchType}</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-0.5 shrink-0 -mr-1">
+              <Link
+                to={`/edit/${purchase.id}`}
+                className="p-2 text-gray-400 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
+                title="编辑"
+              >
+                <Edit2 className="w-4 h-4" />
+              </Link>
+              <button
+                onClick={handleDelete}
+                disabled={deleting}
+                className="p-2 text-gray-400 hover:text-danger-600 hover:bg-danger-50 rounded-lg transition-colors disabled:opacity-50"
+                title="删除"
+              >
+                {deleting ? (
+                  <div className="w-4 h-4 border-2 border-danger-400 border-t-transparent rounded-full animate-spin" />
+                ) : (
+                  <Trash2 className="w-4 h-4" />
+                )}
+              </button>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between mt-3">
+            <div className="flex items-baseline gap-4">
+              <div>
+                <p className="text-xs text-gray-500 mb-0.5">数量</p>
+                <p className="text-sm font-bold text-gray-900">{purchase.quantity}</p>
+              </div>
+              <div>
+                <p className="text-xs text-gray-500 mb-0.5">单价</p>
+                <p className="text-sm font-bold text-primary-600">¥{purchase.price.toFixed(2)}</p>
+              </div>
+            </div>
+            <div className="text-right">
+              <p className="text-xs text-gray-500 mb-0.5">小计</p>
+              <p className="text-lg font-bold text-warning-600">¥{total.toFixed(2)}</p>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
+            <div className="flex items-center gap-1.5">
+              <ChannelIcon channel={purchase.channel} size={16} />
+              <span className="text-xs text-gray-600">{purchase.channel}</span>
+            </div>
+            <span className="text-xs text-gray-400">{formatDate(purchase.createdAt)}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

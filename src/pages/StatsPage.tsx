@@ -1,1 +1,149 @@
-aW1wb3J0IHsgdXNlUHVyY2hhc2VTdG9yZSB9IGZyb20gJ0Avc3RvcmUvcHVyY2hhc2VTdG9yZSc7CmltcG9ydCB7IFN1bW1hcnlDYXJkcyB9IGZyb20gJ0AvY29tcG9uZW50cy9TdW1tYXJ5Q2FyZHMnOwppbXBvcnQgeyBDaGFubmVsSWNvbiB9IGZyb20gJ0AvY29tcG9uZW50cy9DaGFubmVsSWNvbic7CmltcG9ydCBEYXRhQmFja3VwIGZyb20gJ0AvY29tcG9uZW50cy9EYXRhQmFja3VwJzsKaW1wb3J0IHsgZ2V0U3dpdGNoSWNvbiB9IGZyb20gJ0AvdXRpbHMvbW9kZWxVdGlscyc7CmltcG9ydCB7IFBhY2thZ2UsIFNob3BwaW5nQ2FydCwgVHJlbmRpbmdVcCB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CgpleHBvcnQgZnVuY3Rpb24gU3RhdHNQYWdlKCkgewogIGNvbnN0IG1vZGVsU3RhdHMgPSB1c2VQdXJjaGFzZVN0b3JlKChzdGF0ZSkgPT4gc3RhdGUuZ2V0TW9kZWxTdGF0cygpKTsKICBjb25zdCBjaGFubmVsU3RhdHMgPSB1c2VQdXJjaGFzZVN0b3JlKChzdGF0ZSkgPT4gc3RhdGUuZ2V0Q2hhbm5lbFN0YXRzKCkpOwogIGNvbnN0IHR5cGVTdGF0cyA9IHVzZVB1cmNoYXNlU3RvcmUoKHN0YXRlKSA9PiBzdGF0ZS5nZXRUeXBlU3RhdHMoKSk7CgogIGNvbnN0IG1heFR5cGVRdHkgPSBNYXRoLm1heCguLi50eXBlU3RhdHMubWFwKChzKSA9PiBzLnRvdGFsUXVhbnRpdHkpLCAxKTsKICBjb25zdCBtYXhDaGFubmVsUXR5ID0gTWF0aC5tYXgoLi4uY2hhbm5lbFN0YXRzLm1hcCgocykgPT4gcy50b3RhbFF1YW50aXR5KSwgMSk7CiAgY29uc3QgbWF4TW9kZWxRdHkgPSBNYXRoLm1heCguLi5tb2RlbFN0YXRzLm1hcCgocykgPT4gcy50b3RhbFF1YW50aXR5KSwgMSk7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0icGFnZS1jb250YWluZXIiPgogICAgICA8U3VtbWFyeUNhcmRzIC8+CiAgICAgIDxEYXRhQmFja3VwIC8+CgogICAgICB7Lyog5oyJ57G75Z6L57uf6K6hICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0ibWItNCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBtYi0zIHB4LTEiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgICAgPFBhY2thZ2UgY2xhc3NOYW1lPSJ3LTQgaC00IHRleHQtcHJpbWFyeS02MDAiIC8+CiAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9InRleHQtc20gZm9udC1ib2xkIHRleHQtZ3JheS05MDAiPuaMieexu+Wei+e7n+iuoTwvaDM+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyYXktNTAwIj57dHlwZVN0YXRzLmxlbmd0aH0g56eNPC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGdhcC0zIG92ZXJmbG93LXgtYXV0byBwYi0yIC1teC00IHB4LTQgc2Nyb2xsYmFyLWhpZGUiPgogICAgICAgICAge3R5cGVTdGF0cy5tYXAoKHN0YXQpID0+ICgKICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIGtleT17c3RhdC50eXBlfQogICAgICAgICAgICAgIGNsYXNzTmFtZT0ic2hyaW5rLTAgY2FyZCBwLTMgdy0zNiBjYXJkLXByZXNzIgogICAgICAgICAgICA+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIG1iLTIiPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXhsIj57Z2V0U3dpdGNoSWNvbihzdGF0LnR5cGUpfTwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1zZW1pYm9sZCB0ZXh0LWdyYXktOTAwIHRleHQtc20gdHJ1bmNhdGUiPntzdGF0LnR5cGV9PC9zcGFuPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTEiPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgganVzdGlmeS1iZXR3ZWVuIHRleHQteHMiPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtZ3JheS01MDAiPuaVsOmHjzwvc3Bhbj4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJmb250LWJvbGQgdGV4dC1ncmF5LTkwMCI+e3N0YXQudG90YWxRdWFudGl0eX08L3NwYW4+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGp1c3RpZnktYmV0d2VlbiB0ZXh0LXhzIj4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNTAwIj7mgLvku7c8L3NwYW4+CiAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1ib2xkIHRleHQtd2FybmluZy02MDAiPsKle3N0YXQudG90YWxQcmljZS50b0ZpeGVkKDIpfTwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC0yIHctZnVsbCBiZy1ncmF5LTEwMCByb3VuZGVkLWZ1bGwgaC0xLjUiPgogICAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImJnLXByaW1hcnktNTAwIGgtMS41IHJvdW5kZWQtZnVsbCIKICAgICAgICAgICAgICAgICAgc3R5bGU9e3sgd2lkdGg6IGAkeyhzdGF0LnRvdGFsUXVhbnRpdHkgLyBtYXhUeXBlUXR5KSAqIDEwMH0lYCB9fQogICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7Lyog5oyJ5rig6YGT57uf6K6hICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iY2FyZCBwLTQgbWItNCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBtYi0zIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICAgIDxTaG9wcGluZ0NhcnQgY2xhc3NOYW1lPSJ3LTQgaC00IHRleHQtc3VjY2Vzcy02MDAiIC8+CiAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9InRleHQtc20gZm9udC1ib2xkIHRleHQtZ3JheS05MDAiPuaMiea4oOmBk+e7n+iuoTwvaDM+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyYXktNTAwIj57Y2hhbm5lbFN0YXRzLmxlbmd0aH0g5LiqPC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTMiPgogICAgICAgICAge2NoYW5uZWxTdGF0cy5tYXAoKHN0YXQpID0+ICgKICAgICAgICAgICAgPGRpdiBrZXk9e3N0YXQuY2hhbm5lbH0gY2xhc3NOYW1lPSJzcGFjZS15LTIiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4iPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgICAgICAgICAgPENoYW5uZWxJY29uIGNoYW5uZWw9e3N0YXQuY2hhbm5lbH0gc2l6ZT17MjB9IC8+CiAgICAgICAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTkwMCI+e3N0YXQuY2hhbm5lbH08L3A+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS01MDAiPntzdGF0LmNvdW50fSDmrKHph4fotK08L3A+CiAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC1yaWdodCI+CiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zbSBmb250LWJvbGQgdGV4dC1ncmF5LTkwMCI+e3N0YXQudG90YWxRdWFudGl0eX0g5Lu2PC9wPgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgdGV4dC13YXJuaW5nLTYwMCBmb250LW1lZGl1bSI+wqV7c3RhdC50b3RhbFByaWNlLnRvRml4ZWQoMil9PC9wPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctZnVsbCBiZy1ncmF5LTEwMCByb3VuZGVkLWZ1bGwgaC0xLjUiPgogICAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImJnLXN1Y2Nlc3MtNTAwIGgtMS41IHJvdW5kZWQtZnVsbCIKICAgICAgICAgICAgICAgICAgc3R5bGU9e3sgd2lkdGg6IGAkeyhzdGF0LnRvdGFsUXVhbnRpdHkgLyBtYXhDaGFubmVsUXR5KSAqIDEwMH0lYCB9fQogICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7Lyog5oyJ5Z6L5Y+357uf6K6hICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iY2FyZCBwLTQgbWItNCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBtYi0zIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICAgIDxUcmVuZGluZ1VwIGNsYXNzTmFtZT0idy00IGgtNCB0ZXh0LXdhcm5pbmctNjAwIiAvPgogICAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtYm9sZCB0ZXh0LWdyYXktOTAwIj7mjInlnovlj7fnu5/orqE8L2gzPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQteHMgdGV4dC1ncmF5LTUwMCI+e21vZGVsU3RhdHMubGVuZ3RofSDnp408L3NwYW4+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktNCI+CiAgICAgICAgICB7bW9kZWxTdGF0cy5tYXAoKHN0YXQpID0+ICgKICAgICAgICAgICAgPGRpdiBrZXk9e3N0YXQubW9kZWx9IGNsYXNzTmFtZT0ic3BhY2UteS0yIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBtaW4tdy0wIj4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LWxnIj57Z2V0U3dpdGNoSWNvbihzdGF0Lm1vZGVsKX08L3NwYW4+CiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtaW4tdy0wIj4KICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LWdyYXktOTAwIHRydW5jYXRlIj57c3RhdC5tb2RlbH08L3A+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS01MDAiPuWdh+S7tyDCpXtzdGF0LmF2Z1ByaWNlLnRvRml4ZWQoMil9PC9wPgogICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQtcmlnaHQgc2hyaW5rLTAiPgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtc20gZm9udC1ib2xkIHRleHQtd2FybmluZy02MDAiPsKle3N0YXQudG90YWxQcmljZS50b0ZpeGVkKDIpfTwvcD4KICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS01MDAiPntzdGF0LnRvdGFsUXVhbnRpdHl9IOS7tiAvIHtzdGF0LmNvdW50fSDmrKE8L3A+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMyBnYXAtMiI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctZ3JheS01MCByb3VuZGVkLWxnIHAtMiB0ZXh0LWNlbnRlciI+CiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyYXktNTAwIG1iLTAuNSI+5pyA6auYPC9wPgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgZm9udC1ib2xkIHRleHQtZGFuZ2VyLTYwMCI+wqV7c3RhdC5tYXhQcmljZS50b0ZpeGVkKDIpfTwvcD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLWdyYXktNTAgcm91bmRlZC1sZyBwLTIgdGV4dC1jZW50ZXIiPgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgdGV4dC1ncmF5LTUwMCBtYi0wLjUiPuacgOS9jjwvcD4KICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIGZvbnQtYm9sZCB0ZXh0LXN1Y2Nlc3MtNjAwIj7CpXtzdGF0Lm1pblByaWNlLnRvRml4ZWQoMil9PC9wPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctZ3JheS01MCByb3VuZGVkLWxnIHAtMiB0ZXh0LWNlbnRlciI+CiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWdyYXktNTAwIG1iLTAuNSI+5Z2H5Lu3PC9wPgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQteHMgZm9udC1ib2xkIHRleHQtcHJpbWFyeS02MDAiPsKle3N0YXQuYXZnUHJpY2UudG9GaXhlZCgyKX08L3A+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy1mdWxsIGJnLWdyYXktMTAwIHJvdW5kZWQtZnVsbCBoLTEuNSI+CiAgICAgICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iYmctd2FybmluZy01MDAgaC0xLjUgcm91bmRlZC1mdWxsIgogICAgICAgICAgICAgICAgICBzdHlsZT17eyB3aWR0aDogYCR7KHN0YXQudG90YWxRdWFudGl0eSAvIG1heE1vZGVsUXR5KSAqIDEwMH0lYCB9fQogICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9Cg==
+import { usePurchaseStore } from '@/store/purchaseStore';
+import { SummaryCards } from '@/components/SummaryCards';
+import { ChannelIcon } from '@/components/ChannelIcon';
+import DataBackup from '@/components/DataBackup';
+import { getSwitchIcon } from '@/utils/modelUtils';
+import { Package, ShoppingCart, TrendingUp } from 'lucide-react';
+
+export function StatsPage() {
+  const modelStats = usePurchaseStore((state) => state.getModelStats());
+  const channelStats = usePurchaseStore((state) => state.getChannelStats());
+  const typeStats = usePurchaseStore((state) => state.getTypeStats());
+
+  const maxTypeQty = Math.max(...typeStats.map((s) => s.totalQuantity), 1);
+  const maxChannelQty = Math.max(...channelStats.map((s) => s.totalQuantity), 1);
+  const maxModelQty = Math.max(...modelStats.map((s) => s.totalQuantity), 1);
+
+  return (
+    <div className="page-container">
+      <SummaryCards />
+      <DataBackup />
+
+      {/* 按类型统计 */}
+      <div className="mb-4">
+        <div className="flex items-center justify-between mb-3 px-1">
+          <div className="flex items-center gap-2">
+            <Package className="w-4 h-4 text-primary-600" />
+            <h3 className="text-sm font-bold text-gray-900">按类型统计</h3>
+          </div>
+          <span className="text-xs text-gray-500">{typeStats.length} 种</span>
+        </div>
+        <div className="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4 scrollbar-hide">
+          {typeStats.map((stat) => (
+            <div
+              key={stat.type}
+              className="shrink-0 card p-3 w-36 card-press"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xl">{getSwitchIcon(stat.type)}</span>
+                <span className="font-semibold text-gray-900 text-sm truncate">{stat.type}</span>
+              </div>
+              <div className="space-y-1">
+                <div className="flex justify-between text-xs">
+                  <span className="text-gray-500">数量</span>
+                  <span className="font-bold text-gray-900">{stat.totalQuantity}</span>
+                </div>
+                <div className="flex justify-between text-xs">
+                  <span className="text-gray-500">总价</span>
+                  <span className="font-bold text-warning-600">¥{stat.totalPrice.toFixed(2)}</span>
+                </div>
+              </div>
+              <div className="mt-2 w-full bg-gray-100 rounded-full h-1.5">
+                <div
+                  className="bg-primary-500 h-1.5 rounded-full"
+                  style={{ width: `${(stat.totalQuantity / maxTypeQty) * 100}%` }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 按渠道统计 */}
+      <div className="card p-4 mb-4">
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-2">
+            <ShoppingCart className="w-4 h-4 text-success-600" />
+            <h3 className="text-sm font-bold text-gray-900">按渠道统计</h3>
+          </div>
+          <span className="text-xs text-gray-500">{channelStats.length} 个</span>
+        </div>
+        <div className="space-y-3">
+          {channelStats.map((stat) => (
+            <div key={stat.channel} className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <ChannelIcon channel={stat.channel} size={20} />
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900">{stat.channel}</p>
+                    <p className="text-xs text-gray-500">{stat.count} 次采购</p>
+                  </div>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-bold text-gray-900">{stat.totalQuantity} 件</p>
+                  <p className="text-xs text-warning-600 font-medium">¥{stat.totalPrice.toFixed(2)}</p>
+                </div>
+              </div>
+              <div className="w-full bg-gray-100 rounded-full h-1.5">
+                <div
+                  className="bg-success-500 h-1.5 rounded-full"
+                  style={{ width: `${(stat.totalQuantity / maxChannelQty) * 100}%` }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 按型号统计 */}
+      <div className="card p-4 mb-4">
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-2">
+            <TrendingUp className="w-4 h-4 text-warning-600" />
+            <h3 className="text-sm font-bold text-gray-900">按型号统计</h3>
+          </div>
+          <span className="text-xs text-gray-500">{modelStats.length} 种</span>
+        </div>
+        <div className="space-y-4">
+          {modelStats.map((stat) => (
+            <div key={stat.model} className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 min-w-0">
+                  <span className="text-lg">{getSwitchIcon(stat.model)}</span>
+                  <div className="min-w-0">
+                    <p className="text-sm font-semibold text-gray-900 truncate">{stat.model}</p>
+                    <p className="text-xs text-gray-500">均价 ¥{stat.avgPrice.toFixed(2)}</p>
+                  </div>
+                </div>
+                <div className="text-right shrink-0">
+                  <p className="text-sm font-bold text-warning-600">¥{stat.totalPrice.toFixed(2)}</p>
+                  <p className="text-xs text-gray-500">{stat.totalQuantity} 件 / {stat.count} 次</p>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                <div className="bg-gray-50 rounded-lg p-2 text-center">
+                  <p className="text-xs text-gray-500 mb-0.5">最高</p>
+                  <p className="text-xs font-bold text-danger-600">¥{stat.maxPrice.toFixed(2)}</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-2 text-center">
+                  <p className="text-xs text-gray-500 mb-0.5">最低</p>
+                  <p className="text-xs font-bold text-success-600">¥{stat.minPrice.toFixed(2)}</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-2 text-center">
+                  <p className="text-xs text-gray-500 mb-0.5">均价</p>
+                  <p className="text-xs font-bold text-primary-600">¥{stat.avgPrice.toFixed(2)}</p>
+                </div>
+              </div>
+              <div className="w-full bg-gray-100 rounded-full h-1.5">
+                <div
+                  className="bg-warning-500 h-1.5 rounded-full"
+                  style={{ width: `${(stat.totalQuantity / maxModelQty) * 100}%` }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

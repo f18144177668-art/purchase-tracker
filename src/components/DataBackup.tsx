@@ -1,1 +1,78 @@
-aW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQ2xvdWQsIFJlZnJlc2hDdywgQ2hlY2tDaXJjbGUsIFhDaXJjbGUsIENsb2NrIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IHsgdXNlUHVyY2hhc2VTdG9yZSB9IGZyb20gJ0Avc3RvcmUvcHVyY2hhc2VTdG9yZSc7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBEYXRhQmFja3VwKCkgewogIGNvbnN0IHsgcmVmcmVzaENsb3VkLCBjbG91ZFN0YXR1cywgY2xvdWRFcnJvciwgbGFzdFN5bmNUaW1lLCBwdXJjaGFzZXMsIGxvYWRpbmcgfSA9IHVzZVB1cmNoYXNlU3RvcmUoKTsKICBjb25zdCBbcmVmcmVzaGluZywgc2V0UmVmcmVzaGluZ10gPSB1c2VTdGF0ZShmYWxzZSk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICByZWZyZXNoQ2xvdWQoKTsKICB9LCBbcmVmcmVzaENsb3VkXSk7CgogIGNvbnN0IGhhbmRsZVJlZnJlc2ggPSBhc3luYyAoKSA9PiB7CiAgICBzZXRSZWZyZXNoaW5nKHRydWUpOwogICAgYXdhaXQgcmVmcmVzaENsb3VkKCk7CiAgICBzZXRSZWZyZXNoaW5nKGZhbHNlKTsKICB9OwoKICBjb25zdCBmb3JtYXRTeW5jVGltZSA9ICh0aW1lOiBzdHJpbmcgfCBudWxsKSA9PiB7CiAgICBpZiAoIXRpbWUpIHJldHVybiAn5LuO5pyq5ZCM5q2lJzsKICAgIGNvbnN0IGRhdGUgPSBuZXcgRGF0ZSh0aW1lKTsKICAgIHJldHVybiBkYXRlLnRvTG9jYWxlU3RyaW5nKCd6aC1DTicsIHsKICAgICAgbW9udGg6ICcyLWRpZ2l0JywKICAgICAgZGF5OiAnMi1kaWdpdCcsCiAgICAgIGhvdXI6ICcyLWRpZ2l0JywKICAgICAgbWludXRlOiAnMi1kaWdpdCcsCiAgICB9KTsKICB9OwoKICBjb25zdCBzdGF0dXNDb25maWcgPSB7CiAgICBjb25uZWN0ZWQ6IHsgaWNvbjogQ2hlY2tDaXJjbGUsIHRleHQ6ICflt7Lov57mjqUnLCBjb2xvcjogJ3RleHQtc3VjY2Vzcy02MDAgYmctc3VjY2Vzcy01MCcgfSwKICAgIGNoZWNraW5nOiB7IGljb246IFJlZnJlc2hDdywgdGV4dDogJ+ajgOafpeS4rScsIGNvbG9yOiAndGV4dC1ncmF5LTUwMCBiZy1ncmF5LTEwMCcgfSwKICAgIGRpc2Nvbm5lY3RlZDogeyBpY29uOiBYQ2lyY2xlLCB0ZXh0OiAn5pyq6L+e5o6lJywgY29sb3I6ICd0ZXh0LWRhbmdlci02MDAgYmctZGFuZ2VyLTUwJyB9LAogIH07CgogIGNvbnN0IHsgaWNvbjogU3RhdHVzSWNvbiwgdGV4dCwgY29sb3IgfSA9IHN0YXR1c0NvbmZpZ1tjbG91ZFN0YXR1c107CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iY2FyZCBwLTQgbWItNCI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gbWItMyI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTEwIGgtMTAgYmctcHJpbWFyeS01MCByb3VuZGVkLXhsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIj4KICAgICAgICAgICAgPENsb3VkIGNsYXNzTmFtZT0idy01IGgtNSB0ZXh0LXByaW1hcnktNjAwIiAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2PgogICAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJmb250LXNlbWlib2xkIHRleHQtZ3JheS05MDAgdGV4dC1zbSI+5LqR56uv5pWw5o2uPC9oMz4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS01MDAiPntwdXJjaGFzZXMubGVuZ3RofSDmnaHorrDlvZU8L3A+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8YnV0dG9uCiAgICAgICAgICBvbkNsaWNrPXtoYW5kbGVSZWZyZXNofQogICAgICAgICAgZGlzYWJsZWQ9e3JlZnJlc2hpbmcgfHwgbG9hZGluZ30KICAgICAgICAgIGNsYXNzTmFtZT0icC0yIHRleHQtcHJpbWFyeS02MDAgYmctcHJpbWFyeS01MCByb3VuZGVkLWxnIHRyYW5zaXRpb24tYWxsIGRpc2FibGVkOm9wYWNpdHktNTAgYWN0aXZlOmJnLXByaW1hcnktMTAwIgogICAgICAgICAgdGl0bGU9IuWIt+aWsOaVsOaNriIKICAgICAgICA+CiAgICAgICAgICA8UmVmcmVzaEN3IGNsYXNzTmFtZT17YHctNCBoLTQgJHtyZWZyZXNoaW5nIHx8IGxvYWRpbmcgPyAnYW5pbWF0ZS1zcGluJyA6ICcnfWB9IC8+CiAgICAgICAgPC9idXR0b24+CiAgICAgIDwvZGl2PgoKICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9e2BpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSBweC0yLjUgcHktMSByb3VuZGVkLWZ1bGwgdGV4dC14cyBmb250LW1lZGl1bSAke2NvbG9yfWB9PgogICAgICAgICAgPFN0YXR1c0ljb24gY2xhc3NOYW1lPXtgdy0zLjUgaC0zLjUgJHtjbG91ZFN0YXR1cyA9PT0gJ2NoZWNraW5nJyA/ICdhbmltYXRlLXNwaW4nIDogJyd9YH0gLz4KICAgICAgICAgIDxzcGFuPnt0ZXh0fTwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEgdGV4dC14cyB0ZXh0LWdyYXktNTAwIj4KICAgICAgICAgIDxDbG9jayBjbGFzc05hbWU9InctMy41IGgtMy41IiAvPgogICAgICAgICAgPHNwYW4+e2Zvcm1hdFN5bmNUaW1lKGxhc3RTeW5jVGltZSl9PC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHtjbG91ZFN0YXR1cyA9PT0gJ2Rpc2Nvbm5lY3RlZCcgJiYgY2xvdWRFcnJvciAmJiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im10LTMgcC0yLjUgYmctZGFuZ2VyLTUwIGJvcmRlciBib3JkZXItZGFuZ2VyLTEwMCByb3VuZGVkLWxnIj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LWRhbmdlci02MDAgYnJlYWstYWxsIj7plJnor6/vvJp7Y2xvdWRFcnJvcn08L3A+CiAgICAgICAgPC9kaXY+CiAgICAgICl9CiAgICA8L2Rpdj4KICApOwp9Cg==
+import { useState, useEffect } from 'react';
+import { Cloud, RefreshCw, CheckCircle, XCircle, Clock } from 'lucide-react';
+import { usePurchaseStore } from '@/store/purchaseStore';
+
+export default function DataBackup() {
+  const { refreshCloud, cloudStatus, cloudError, lastSyncTime, purchases, loading } = usePurchaseStore();
+  const [refreshing, setRefreshing] = useState(false);
+
+  useEffect(() => {
+    refreshCloud();
+  }, [refreshCloud]);
+
+  const handleRefresh = async () => {
+    setRefreshing(true);
+    await refreshCloud();
+    setRefreshing(false);
+  };
+
+  const formatSyncTime = (time: string | null) => {
+    if (!time) return '从未同步';
+    const date = new Date(time);
+    return date.toLocaleString('zh-CN', {
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+    });
+  };
+
+  const statusConfig = {
+    connected: { icon: CheckCircle, text: '已连接', color: 'text-success-600 bg-success-50' },
+    checking: { icon: RefreshCw, text: '检查中', color: 'text-gray-500 bg-gray-100' },
+    disconnected: { icon: XCircle, text: '未连接', color: 'text-danger-600 bg-danger-50' },
+  };
+
+  const { icon: StatusIcon, text, color } = statusConfig[cloudStatus];
+
+  return (
+    <div className="card p-4 mb-4">
+      <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 bg-primary-50 rounded-xl flex items-center justify-center">
+            <Cloud className="w-5 h-5 text-primary-600" />
+          </div>
+          <div>
+            <h3 className="font-semibold text-gray-900 text-sm">云端数据</h3>
+            <p className="text-xs text-gray-500">{purchases.length} 条记录</p>
+          </div>
+        </div>
+        <button
+          onClick={handleRefresh}
+          disabled={refreshing || loading}
+          className="p-2 text-primary-600 bg-primary-50 rounded-lg transition-all disabled:opacity-50 active:bg-primary-100"
+          title="刷新数据"
+        >
+          <RefreshCw className={`w-4 h-4 ${refreshing || loading ? 'animate-spin' : ''}`} />
+        </button>
+      </div>
+
+      <div className="flex items-center justify-between">
+        <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium ${color}`}>
+          <StatusIcon className={`w-3.5 h-3.5 ${cloudStatus === 'checking' ? 'animate-spin' : ''}`} />
+          <span>{text}</span>
+        </div>
+        <div className="flex items-center gap-1 text-xs text-gray-500">
+          <Clock className="w-3.5 h-3.5" />
+          <span>{formatSyncTime(lastSyncTime)}</span>
+        </div>
+      </div>
+
+      {cloudStatus === 'disconnected' && cloudError && (
+        <div className="mt-3 p-2.5 bg-danger-50 border border-danger-100 rounded-lg">
+          <p className="text-xs text-danger-600 break-all">错误：{cloudError}</p>
+        </div>
+      )}
+    </div>
+  );
+}

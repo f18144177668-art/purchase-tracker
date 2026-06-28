@@ -1,1 +1,83 @@
-aW1wb3J0IHsgQmFyQ2hhcnQzLCBIb21lLCBQbHVzIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsNCmltcG9ydCB7IExpbmssIHVzZUxvY2F0aW9uIH0gZnJvbSAncmVhY3Qtcm91dGVyLWRvbSc7DQppbXBvcnQgeyBpc05hdGl2ZUFwcCB9IGZyb20gJ0AvdXRpbHMvcGxhdGZvcm0nOw0KDQpleHBvcnQgZnVuY3Rpb24gSGVhZGVyKCkgew0KICBjb25zdCBsb2NhdGlvbiA9IHVzZUxvY2F0aW9uKCk7DQogIGNvbnN0IGlzSG9tZSA9IGxvY2F0aW9uLnBhdGhuYW1lID09PSAnLyc7DQogIGNvbnN0IGlzU3RhdHMgPSBsb2NhdGlvbi5wYXRobmFtZSA9PT0gJy9zdGF0cyc7DQogIGNvbnN0IGlzQWRkID0gbG9jYXRpb24ucGF0aG5hbWUgPT09ICcvYWRkJzsNCg0KICAvLyBBUFAg56uv5L2/55So5pu057Sn5YeR55qE5aS06YOoDQogIGlmIChpc05hdGl2ZUFwcCgpKSB7DQogICAgcmV0dXJuICgNCiAgICAgIDxoZWFkZXIgY2xhc3NOYW1lPSJiZy13aGl0ZSBib3JkZXItYiBib3JkZXItZ3JheS0xMDAgc2FmZS1hcmVhLXRvcCB6LTIwIj4NCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC00IGgtMTIiPg0KICAgICAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtbGcgZm9udC1ib2xkIHRleHQtZ3JheS05MDAiPumHh+i0reiusOW9lTwvaDE+DQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0xIj4NCiAgICAgICAgICAgIDxMaW5rDQogICAgICAgICAgICAgIHRvPSIvc3RhdHMiDQogICAgICAgICAgICAgIGNsYXNzTmFtZT17YHAtMiByb3VuZGVkLWxnIHRyYW5zaXRpb24tY29sb3JzICR7DQogICAgICAgICAgICAgICAgaXNTdGF0cyA/ICdiZy1wcmltYXJ5LTUwIHRleHQtcHJpbWFyeS02MDAnIDogJ3RleHQtZ3JheS01MDAnDQogICAgICAgICAgICAgIH1gfQ0KICAgICAgICAgICAgPg0KICAgICAgICAgICAgICA8QmFyQ2hhcnQzIGNsYXNzTmFtZT0idy01IGgtNSIgLz4NCiAgICAgICAgICAgIDwvTGluaz4NCiAgICAgICAgICAgIDxMaW5rDQogICAgICAgICAgICAgIHRvPSIvYWRkIg0KICAgICAgICAgICAgICBjbGFzc05hbWU9e2BwLTIgcm91bmRlZC1sZyB0cmFuc2l0aW9uLWNvbG9ycyAkew0KICAgICAgICAgICAgICAgIGlzQWRkID8gJ2JnLXByaW1hcnktNTAgdGV4dC1wcmltYXJ5LTYwMCcgOiAndGV4dC1ncmF5LTUwMCcNCiAgICAgICAgICAgICAgfWB9DQogICAgICAgICAgICA+DQogICAgICAgICAgICAgIDxQbHVzIGNsYXNzTmFtZT0idy01IGgtNSIgLz4NCiAgICAgICAgICAgIDwvTGluaz4NCiAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgPC9kaXY+DQogICAgICA8L2hlYWRlcj4NCiAgICApOw0KICB9DQoNCiAgLy8g5qGM6Z2i56uv5L+d5oyB5Y6f5p2l55qE5a+86Iiq5qCPDQogIHJldHVybiAoDQogICAgPGhlYWRlciBjbGFzc05hbWU9ImJnLXByaW1hcnktNjAwIHRleHQtd2hpdGUgc2hhZG93LW1kIHNhZmUtYXJlYS10b3Agei0yMCI+DQogICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctN3hsIG14LWF1dG8gcHgtNCBoLTE0IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiI+DQogICAgICAgIDxMaW5rIHRvPSIvIiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4NCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy04IGgtOCBiZy13aGl0ZS8yMCByb3VuZGVkLWxnIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIj4NCiAgICAgICAgICAgIDxIb21lIGNsYXNzTmFtZT0idy01IGgtNSIgLz4NCiAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICA8aDEgY2xhc3NOYW1lPSJ0ZXh0LWxnIGZvbnQtYm9sZCI+6YeH6LSt6K6w5b2V566h55CGPC9oMT4NCiAgICAgICAgPC9MaW5rPg0KDQogICAgICAgIDxuYXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMSI+DQogICAgICAgICAgPExpbmsNCiAgICAgICAgICAgIHRvPSIvIg0KICAgICAgICAgICAgY2xhc3NOYW1lPXtgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSBweC0zIHB5LTIgcm91bmRlZC1sZyB0ZXh0LXNtIHRyYW5zaXRpb24tYWxsICR7DQogICAgICAgICAgICAgIGlzSG9tZSA/ICdiZy13aGl0ZS8yMCcgOiAndGV4dC13aGl0ZS84MCBob3ZlcjpiZy13aGl0ZS8xMCcNCiAgICAgICAgICAgIH1gfQ0KICAgICAgICAgID4NCiAgICAgICAgICAgIDxIb21lIGNsYXNzTmFtZT0idy00IGgtNCIgLz4NCiAgICAgICAgICAgIDxzcGFuPuiusOW9lTwvc3Bhbj4NCiAgICAgICAgICA8L0xpbms+DQogICAgICAgICAgPExpbmsNCiAgICAgICAgICAgIHRvPSIvc3RhdHMiDQogICAgICAgICAgICBjbGFzc05hbWU9e2BmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMS41IHB4LTMgcHktMiByb3VuZGVkLWxnIHRleHQtc20gdHJhbnNpdGlvbi1hbGwgJHsNCiAgICAgICAgICAgICAgaXNTdGF0cyA/ICdiZy13aGl0ZS8yMCcgOiAndGV4dC13aGl0ZS84MCBob3ZlcjpiZy13aGl0ZS8xMCcNCiAgICAgICAgICAgIH1gfQ0KICAgICAgICAgID4NCiAgICAgICAgICAgIDxCYXJDaGFydDMgY2xhc3NOYW1lPSJ3LTQgaC00IiAvPg0KICAgICAgICAgICAgPHNwYW4+57uf6K6hPC9zcGFuPg0KICAgICAgICAgIDwvTGluaz4NCiAgICAgICAgICA8TGluaw0KICAgICAgICAgICAgdG89Ii9hZGQiDQogICAgICAgICAgICBjbGFzc05hbWU9e2BmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMS41IHB4LTMgcHktMiByb3VuZGVkLWxnIHRleHQtc20gZm9udC1tZWRpdW0gdHJhbnNpdGlvbi1hbGwgJHsNCiAgICAgICAgICAgICAgaXNBZGQgPyAnYmctd2FybmluZy01MDAnIDogJ2JnLXdoaXRlIHRleHQtcHJpbWFyeS02MDAgaG92ZXI6YmctZ3JheS0xMDAnDQogICAgICAgICAgICB9YH0NCiAgICAgICAgICA+DQogICAgICAgICAgICA8UGx1cyBjbGFzc05hbWU9InctNCBoLTQiIC8+DQogICAgICAgICAgICA8c3Bhbj7mt7vliqA8L3NwYW4+DQogICAgICAgICAgPC9MaW5rPg0KICAgICAgICA8L25hdj4NCiAgICAgIDwvZGl2Pg0KICAgIDwvaGVhZGVyPg0KICApOw0KfQ0K
+import { BarChart3, Home, Plus } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { isNativeApp } from '@/utils/platform';
+
+export function Header() {
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+  const isStats = location.pathname === '/stats';
+  const isAdd = location.pathname === '/add';
+
+  // APP 端使用更紧凑的头部
+  if (isNativeApp()) {
+    return (
+      <header className="bg-white border-b border-gray-100 safe-area-top z-20">
+        <div className="flex items-center justify-between px-4 h-12">
+          <h1 className="text-lg font-bold text-gray-900">采购记录</h1>
+          <div className="flex items-center gap-1">
+            <Link
+              to="/stats"
+              className={`p-2 rounded-lg transition-colors ${
+                isStats ? 'bg-primary-50 text-primary-600' : 'text-gray-500'
+              }`}
+            >
+              <BarChart3 className="w-5 h-5" />
+            </Link>
+            <Link
+              to="/add"
+              className={`p-2 rounded-lg transition-colors ${
+                isAdd ? 'bg-primary-50 text-primary-600' : 'text-gray-500'
+              }`}
+            >
+              <Plus className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </header>
+    );
+  }
+
+  // 桌面端保持原来的导航栏
+  return (
+    <header className="bg-primary-600 text-white shadow-md safe-area-top z-20">
+      <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
+        <Link to="/" className="flex items-center gap-2">
+          <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+            <Home className="w-5 h-5" />
+          </div>
+          <h1 className="text-lg font-bold">采购记录管理</h1>
+        </Link>
+
+        <nav className="flex items-center gap-1">
+          <Link
+            to="/"
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm transition-all ${
+              isHome ? 'bg-white/20' : 'text-white/80 hover:bg-white/10'
+            }`}
+          >
+            <Home className="w-4 h-4" />
+            <span>记录</span>
+          </Link>
+          <Link
+            to="/stats"
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm transition-all ${
+              isStats ? 'bg-white/20' : 'text-white/80 hover:bg-white/10'
+            }`}
+          >
+            <BarChart3 className="w-4 h-4" />
+            <span>统计</span>
+          </Link>
+          <Link
+            to="/add"
+            className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+              isAdd ? 'bg-warning-500' : 'bg-white text-primary-600 hover:bg-gray-100'
+            }`}
+          >
+            <Plus className="w-4 h-4" />
+            <span>添加</span>
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+}

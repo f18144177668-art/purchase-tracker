@@ -1,1 +1,59 @@
-aW1wb3J0IHsgU2VhcmNoLCBYIH0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IHsgdXNlUHVyY2hhc2VTdG9yZSB9IGZyb20gJ0Avc3RvcmUvcHVyY2hhc2VTdG9yZSc7CmltcG9ydCB7IGNoYW5uZWxzIH0gZnJvbSAnQC9kYXRhL2luaXRpYWxEYXRhJzsKCmV4cG9ydCBmdW5jdGlvbiBTZWFyY2hGaWx0ZXIoKSB7CiAgY29uc3Qgc2VhcmNoVGVybSA9IHVzZVB1cmNoYXNlU3RvcmUoKHN0YXRlKSA9PiBzdGF0ZS5zZWFyY2hUZXJtKTsKICBjb25zdCBjaGFubmVsRmlsdGVyID0gdXNlUHVyY2hhc2VTdG9yZSgoc3RhdGUpID0+IHN0YXRlLmNoYW5uZWxGaWx0ZXIpOwogIGNvbnN0IHNldFNlYXJjaFRlcm0gPSB1c2VQdXJjaGFzZVN0b3JlKChzdGF0ZSkgPT4gc3RhdGUuc2V0U2VhcmNoVGVybSk7CiAgY29uc3Qgc2V0Q2hhbm5lbEZpbHRlciA9IHVzZVB1cmNoYXNlU3RvcmUoKHN0YXRlKSA9PiBzdGF0ZS5zZXRDaGFubmVsRmlsdGVyKTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJtYi00IHNwYWNlLXktMyI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSI+CiAgICAgICAgPFNlYXJjaCBjbGFzc05hbWU9ImFic29sdXRlIGxlZnQtMyB0b3AtMS8yIC10cmFuc2xhdGUteS0xLzIgdy00IGgtNCB0ZXh0LWdyYXktNDAwIiAvPgogICAgICAgIDxpbnB1dAogICAgICAgICAgdHlwZT0idGV4dCIKICAgICAgICAgIHBsYWNlaG9sZGVyPSLmkJzntKLlnovlj7fjgIHljZXlj7fjgIHpmLLkvKrnoIEuLi4iCiAgICAgICAgICB2YWx1ZT17c2VhcmNoVGVybX0KICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0U2VhcmNoVGVybShlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICBjbGFzc05hbWU9ImlucHV0IHBsLTkgcHItOSB0ZXh0LXNtIgogICAgICAgIC8+CiAgICAgICAge3NlYXJjaFRlcm0gJiYgKAogICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRTZWFyY2hUZXJtKCcnKX0KICAgICAgICAgICAgY2xhc3NOYW1lPSJhYnNvbHV0ZSByaWdodC0zIHRvcC0xLzIgLXRyYW5zbGF0ZS15LTEvMiBwLTAuNSB0ZXh0LWdyYXktNDAwIGhvdmVyOnRleHQtZ3JheS02MDAiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxYIGNsYXNzTmFtZT0idy00IGgtNCIgLz4KICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICl9CiAgICAgIDwvZGl2PgoKICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZ2FwLTIgb3ZlcmZsb3cteC1hdXRvIHBiLTEgLW14LTQgcHgtNCBzY3JvbGxiYXItaGlkZSI+CiAgICAgICAgPGJ1dHRvbgogICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0Q2hhbm5lbEZpbHRlcignJyl9CiAgICAgICAgICBjbGFzc05hbWU9e2BzaHJpbmstMCBweC0zIHB5LTEuNSByb3VuZGVkLWZ1bGwgdGV4dC14cyBmb250LW1lZGl1bSB0cmFuc2l0aW9uLWNvbG9ycyAkewogICAgICAgICAgICBjaGFubmVsRmlsdGVyID09PSAnJwogICAgICAgICAgICAgID8gJ2JnLWdyYXktOTAwIHRleHQtd2hpdGUnCiAgICAgICAgICAgICAgOiAnYmctZ3JheS0xMDAgdGV4dC1ncmF5LTYwMCBhY3RpdmU6YmctZ3JheS0yMDAnCiAgICAgICAgICB9YH0KICAgICAgICA+CiAgICAgICAgICDlhajpg6gKICAgICAgICA8L2J1dHRvbj4KICAgICAgICB7Y2hhbm5lbHMubWFwKChjaGFubmVsKSA9PiAoCiAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgIGtleT17Y2hhbm5lbH0KICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0Q2hhbm5lbEZpbHRlcihjaGFubmVsKX0KICAgICAgICAgICAgY2xhc3NOYW1lPXtgc2hyaW5rLTAgcHgtMyBweS0xLjUgcm91bmRlZC1mdWxsIHRleHQteHMgZm9udC1tZWRpdW0gdHJhbnNpdGlvbi1jb2xvcnMgJHsKICAgICAgICAgICAgICBjaGFubmVsRmlsdGVyID09PSBjaGFubmVsCiAgICAgICAgICAgICAgICA/ICdiZy1wcmltYXJ5LTYwMCB0ZXh0LXdoaXRlJwogICAgICAgICAgICAgICAgOiAnYmctd2hpdGUgYm9yZGVyIGJvcmRlci1ncmF5LTIwMCB0ZXh0LWdyYXktNjAwIGFjdGl2ZTpiZy1ncmF5LTUwJwogICAgICAgICAgICB9YH0KICAgICAgICAgID4KICAgICAgICAgICAge2NoYW5uZWx9CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICApKX0KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9Cg==
+import { Search, X } from 'lucide-react';
+import { usePurchaseStore } from '@/store/purchaseStore';
+import { channels } from '@/data/initialData';
+
+export function SearchFilter() {
+  const searchTerm = usePurchaseStore((state) => state.searchTerm);
+  const channelFilter = usePurchaseStore((state) => state.channelFilter);
+  const setSearchTerm = usePurchaseStore((state) => state.setSearchTerm);
+  const setChannelFilter = usePurchaseStore((state) => state.setChannelFilter);
+
+  return (
+    <div className="mb-4 space-y-3">
+      <div className="relative">
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+        <input
+          type="text"
+          placeholder="搜索型号、单号、防伪码..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="input pl-9 pr-9 text-sm"
+        />
+        {searchTerm && (
+          <button
+            onClick={() => setSearchTerm('')}
+            className="absolute right-3 top-1/2 -translate-y-1/2 p-0.5 text-gray-400 hover:text-gray-600"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        )}
+      </div>
+
+      <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 scrollbar-hide">
+        <button
+          onClick={() => setChannelFilter('')}
+          className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+            channelFilter === ''
+              ? 'bg-gray-900 text-white'
+              : 'bg-gray-100 text-gray-600 active:bg-gray-200'
+          }`}
+        >
+          全部
+        </button>
+        {channels.map((channel) => (
+          <button
+            key={channel}
+            onClick={() => setChannelFilter(channel)}
+            className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+              channelFilter === channel
+                ? 'bg-primary-600 text-white'
+                : 'bg-white border border-gray-200 text-gray-600 active:bg-gray-50'
+            }`}
+          >
+            {channel}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}

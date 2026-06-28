@@ -1,1 +1,7 @@
-ewogICJ2ZXJzaW9uIjogIjEuMC4wIiwKICAiYnVpbGROdW1iZXIiOiAyLAogICJ1cGRhdGVVcmwiOiAiaHR0cHM6Ly8xLW5pbmUtZXRhLTM0LnZlcmNlbC5hcHAvdXBkYXRlLyIsCiAgImFwa1VybCI6ICIiLAogICJyZWxlYXNlTm90ZXMiOiAi5Yid5aeL54mI5pysIgp9
+{
+  "version": "1.0.0",
+  "buildNumber": 2,
+  "updateUrl": "https://1-nine-eta-34.vercel.app/update/",
+  "apkUrl": "",
+  "releaseNotes": "重新设计 APP 页面：优化首页、统计页、表单布局；修复 GitHub API 推送导致的 Base64 编码问题"
+}

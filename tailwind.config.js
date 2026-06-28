@@ -1,1 +1,80 @@
-LyoqIEB0eXBlIHtpbXBvcnQoJ3RhaWx3aW5kY3NzJykuQ29uZmlnfSAqLwpleHBvcnQgZGVmYXVsdCB7CiAgY29udGVudDogWwogICAgIi4vaW5kZXguaHRtbCIsCiAgICAiLi9zcmMvKiovKi57anMsdHMsanN4LHRzeH0iLAogIF0sCiAgdGhlbWU6IHsKICAgIGV4dGVuZDogewogICAgICBjb2xvcnM6IHsKICAgICAgICBwcmltYXJ5OiB7CiAgICAgICAgICA1MDogJyNlZmY2ZmYnLAogICAgICAgICAgMTAwOiAnI2RiZWFmZScsCiAgICAgICAgICAyMDA6ICcjYmZkYmZlJywKICAgICAgICAgIDMwMDogJyM5M2M1ZmQnLAogICAgICAgICAgNDAwOiAnIzYwYTVmYScsCiAgICAgICAgICA1MDA6ICcjM2I4MmY2JywKICAgICAgICAgIDYwMDogJyMyNTYzZWInLAogICAgICAgICAgNzAwOiAnIzFkNGVkOCcsCiAgICAgICAgfSwKICAgICAgICBzdWNjZXNzOiB7CiAgICAgICAgICA1MDogJyNlY2ZkZjUnLAogICAgICAgICAgMTAwOiAnI2QxZmFlNScsCiAgICAgICAgICA1MDA6ICcjMTBiOTgxJywKICAgICAgICAgIDYwMDogJyMwNTk2NjknLAogICAgICAgIH0sCiAgICAgICAgd2FybmluZzogewogICAgICAgICAgNTA6ICcjZmZmYmViJywKICAgICAgICAgIDEwMDogJyNmZWYzYzcnLAogICAgICAgICAgNTAwOiAnI2Y1OWUwYicsCiAgICAgICAgICA2MDA6ICcjZDk3NzA2JywKICAgICAgICB9LAogICAgICAgIGRhbmdlcjogewogICAgICAgICAgNTA6ICcjZmVmMmYyJywKICAgICAgICAgIDEwMDogJyNmZWUyZTInLAogICAgICAgICAgNTAwOiAnI2VmNDQ0NCcsCiAgICAgICAgICA2MDA6ICcjZGMyNjI2JywKICAgICAgICB9LAogICAgICAgIGdyYXk6IHsKICAgICAgICAgIDUwOiAnI2Y5ZmFmYicsCiAgICAgICAgICAxMDA6ICcjZjNmNGY2JywKICAgICAgICAgIDIwMDogJyNlNWU3ZWInLAogICAgICAgICAgMzAwOiAnI2QxZDVkYicsCiAgICAgICAgICA0MDA6ICcjOWNhM2FmJywKICAgICAgICAgIDUwMDogJyM2YjcyODAnLAogICAgICAgICAgNjAwOiAnIzRiNTU2MycsCiAgICAgICAgICA3MDA6ICcjMzc0MTUxJywKICAgICAgICAgIDgwMDogJyMxZjI5MzcnLAogICAgICAgICAgOTAwOiAnIzExMTgyNycsCiAgICAgICAgfSwKICAgICAgfSwKICAgICAgZm9udFNpemU6IHsKICAgICAgICAnMnhzJzogWycxMXB4JywgeyBsaW5lSGVpZ2h0OiAnMTRweCcgfV0sCiAgICAgICAgJ3hzJzogWycxMnB4JywgeyBsaW5lSGVpZ2h0OiAnMTZweCcgfV0sCiAgICAgICAgJ3NtJzogWycxM3B4JywgeyBsaW5lSGVpZ2h0OiAnMThweCcgfV0sCiAgICAgICAgJ2Jhc2UnOiBbJzE1cHgnLCB7IGxpbmVIZWlnaHQ6ICcyMnB4JyB9XSwKICAgICAgICAnbGcnOiBbJzE3cHgnLCB7IGxpbmVIZWlnaHQ6ICcyNHB4JyB9XSwKICAgICAgICAneGwnOiBbJzIwcHgnLCB7IGxpbmVIZWlnaHQ6ICcyOHB4JyB9XSwKICAgICAgICAnMnhsJzogWycyNHB4JywgeyBsaW5lSGVpZ2h0OiAnMzJweCcgfV0sCiAgICAgIH0sCiAgICAgIHNwYWNpbmc6IHsKICAgICAgICAnc2FmZS10b3AnOiAnZW52KHNhZmUtYXJlYS1pbnNldC10b3ApJywKICAgICAgICAnc2FmZS1ib3R0b20nOiAnZW52KHNhZmUtYXJlYS1pbnNldC1ib3R0b20pJywKICAgICAgfSwKICAgICAgYm9yZGVyUmFkaXVzOiB7CiAgICAgICAgJzJ4bCc6ICcxNnB4JywKICAgICAgICAneGwnOiAnMTJweCcsCiAgICAgICAgJ2xnJzogJzEwcHgnLAogICAgICAgICdtZCc6ICc4cHgnLAogICAgICAgICdzbSc6ICc2cHgnLAogICAgICB9LAogICAgICBib3hTaGFkb3c6IHsKICAgICAgICAnc20nOiAnMCAxcHggMnB4IDAgcmdiYSgwLCAwLCAwLCAwLjA0KScsCiAgICAgICAgJ0RFRkFVTFQnOiAnMCAxcHggM3B4IDAgcmdiYSgwLCAwLCAwLCAwLjA4KSwgMCAxcHggMnB4IC0xcHggcmdiYSgwLCAwLCAwLCAwLjA0KScsCiAgICAgICAgJ21kJzogJzAgNHB4IDZweCAtMXB4IHJnYmEoMCwgMCwgMCwgMC4wNiksIDAgMnB4IDRweCAtMnB4IHJnYmEoMCwgMCwgMCwgMC4wNCknLAogICAgICAgICdsZyc6ICcwIDEwcHggMTVweCAtM3B4IHJnYmEoMCwgMCwgMCwgMC4wOCksIDAgNHB4IDZweCAtNHB4IHJnYmEoMCwgMCwgMCwgMC4wNCknLAogICAgICB9LAogICAgfSwKICB9LAogIHBsdWdpbnM6IFtdLAp9Cg==
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+        },
+        success: {
+          50: '#ecfdf5',
+          100: '#d1fae5',
+          500: '#10b981',
+          600: '#059669',
+        },
+        warning: {
+          50: '#fffbeb',
+          100: '#fef3c7',
+          500: '#f59e0b',
+          600: '#d97706',
+        },
+        danger: {
+          50: '#fef2f2',
+          100: '#fee2e2',
+          500: '#ef4444',
+          600: '#dc2626',
+        },
+        gray: {
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          300: '#d1d5db',
+          400: '#9ca3af',
+          500: '#6b7280',
+          600: '#4b5563',
+          700: '#374151',
+          800: '#1f2937',
+          900: '#111827',
+        },
+      },
+      fontSize: {
+        '2xs': ['11px', { lineHeight: '14px' }],
+        'xs': ['12px', { lineHeight: '16px' }],
+        'sm': ['13px', { lineHeight: '18px' }],
+        'base': ['15px', { lineHeight: '22px' }],
+        'lg': ['17px', { lineHeight: '24px' }],
+        'xl': ['20px', { lineHeight: '28px' }],
+        '2xl': ['24px', { lineHeight: '32px' }],
+      },
+      spacing: {
+        'safe-top': 'env(safe-area-inset-top)',
+        'safe-bottom': 'env(safe-area-inset-bottom)',
+      },
+      borderRadius: {
+        '2xl': '16px',
+        'xl': '12px',
+        'lg': '10px',
+        'md': '8px',
+        'sm': '6px',
+      },
+      boxShadow: {
+        'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.04)',
+        'DEFAULT': '0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.04)',
+        'md': '0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04)',
+        'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04)',
+      },
+    },
+  },
+  plugins: [],
+}

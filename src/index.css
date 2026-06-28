@@ -1,1 +1,134 @@
-QHRhaWx3aW5kIGJhc2U7CkB0YWlsd2luZCBjb21wb25lbnRzOwpAdGFpbHdpbmQgdXRpbGl0aWVzOwoKQGxheWVyIGJhc2UgewogIGh0bWwgewogICAgLXdlYmtpdC10ZXh0LXNpemUtYWRqdXN0OiAxMDAlOwogICAgLXdlYmtpdC10YXAtaGlnaGxpZ2h0LWNvbG9yOiB0cmFuc3BhcmVudDsKICB9CgogIGJvZHkgewogICAgQGFwcGx5IGZvbnQtc2FucyB0ZXh0LWdyYXktOTAwIGFudGlhbGlhc2VkIGJnLWdyYXktNTA7CiAgICBmb250LXNpemU6IDE1cHg7CiAgICBsaW5lLWhlaWdodDogMjJweDsKICB9CgogIC8qIOenu+WKqOerr+S8mOWMlu+8muemgeeUqOmAieS4rSAqLwogIEBtZWRpYSAobWF4LXdpZHRoOiA3NjhweCkgewogICAgKiB7CiAgICAgIC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgIHVzZXItc2VsZWN0OiBub25lOwogICAgfQoKICAgIGlucHV0LCB0ZXh0YXJlYSwgW2NvbnRlbnRlZGl0YWJsZV0gewogICAgICAtd2Via2l0LXVzZXItc2VsZWN0OiB0ZXh0OwogICAgICB1c2VyLXNlbGVjdDogdGV4dDsKICAgIH0KICB9Cn0KCkBsYXllciBjb21wb25lbnRzIHsKICAvKiDpobXpnaLlrrnlmaggKi8KICAucGFnZS1jb250YWluZXIgewogICAgQGFwcGx5IHctZnVsbCBtaW4taC1mdWxsIHB4LTQgcHQtNCBwYi0yNDsKICB9CgogIC8qIOWNoeeJhyAqLwogIC5jYXJkIHsKICAgIEBhcHBseSBiZy13aGl0ZSByb3VuZGVkLXhsIHNoYWRvdy1zbSBib3JkZXIgYm9yZGVyLWdyYXktMTAwOwogIH0KCiAgLmNhcmQtcHJlc3MgewogICAgQGFwcGx5IGFjdGl2ZTpzY2FsZS1bMC45OF0gdHJhbnNpdGlvbi10cmFuc2Zvcm0gZHVyYXRpb24tMTUwOwogIH0KCiAgLyog5oyJ6ZKuICovCiAgLmJ0biB7CiAgICBAYXBwbHkgaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0yIHB4LTQgcHktMyByb3VuZGVkLWxnIGZvbnQtbWVkaXVtIHRyYW5zaXRpb24tYWxsIGFjdGl2ZTpzY2FsZS1bMC45N107CiAgfQoKICAuYnRuLXByaW1hcnkgewogICAgQGFwcGx5IGJ0biBiZy1wcmltYXJ5LTYwMCB0ZXh0LXdoaXRlIGFjdGl2ZTpiZy1wcmltYXJ5LTcwMDsKICB9CgogIC5idG4tc2Vjb25kYXJ5IHsKICAgIEBhcHBseSBidG4gYmctZ3JheS0xMDAgdGV4dC1ncmF5LTcwMCBhY3RpdmU6YmctZ3JheS0yMDA7CiAgfQoKICAuYnRuLWRhbmdlciB7CiAgICBAYXBwbHkgYnRuIGJnLWRhbmdlci01MCB0ZXh0LWRhbmdlci02MDAgYWN0aXZlOmJnLWRhbmdlci0xMDA7CiAgfQoKICAuYnRuLWdob3N0IHsKICAgIEBhcHBseSBidG4gdGV4dC1ncmF5LTYwMCBhY3RpdmU6YmctZ3JheS0xMDA7CiAgfQoKICAvKiDooajljZXovpPlhaUgKi8KICAuaW5wdXQgewogICAgQGFwcGx5IHctZnVsbCBweC00IHB5LTMgYmctZ3JheS01MCBib3JkZXIgYm9yZGVyLWdyYXktMjAwIHJvdW5kZWQtbGcgdGV4dC1iYXNlIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpyaW5nLTIgZm9jdXM6cmluZy1wcmltYXJ5LTUwMC8yMCBmb2N1czpib3JkZXItcHJpbWFyeS01MDAgdHJhbnNpdGlvbi1hbGw7CiAgfQoKICAuaW5wdXQtbGFiZWwgewogICAgQGFwcGx5IGJsb2NrIHRleHQtc20gZm9udC1tZWRpdW0gdGV4dC1ncmF5LTcwMCBtYi0xLjU7CiAgfQoKICAvKiDmoIfnrb4v5b6956ugICovCiAgLmJhZGdlIHsKICAgIEBhcHBseSBpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgcHgtMiBweS0wLjUgcm91bmRlZC1mdWxsIHRleHQteHMgZm9udC1tZWRpdW07CiAgfQoKICAuYmFkZ2UtZ3JheSB7CiAgICBAYXBwbHkgYmFkZ2UgYmctZ3JheS0xMDAgdGV4dC1ncmF5LTYwMDsKICB9CgogIC5iYWRnZS1wcmltYXJ5IHsKICAgIEBhcHBseSBiYWRnZSBiZy1wcmltYXJ5LTUwIHRleHQtcHJpbWFyeS02MDA7CiAgfQoKICAuYmFkZ2Utc3VjY2VzcyB7CiAgICBAYXBwbHkgYmFkZ2UgYmctc3VjY2Vzcy01MCB0ZXh0LXN1Y2Nlc3MtNjAwOwogIH0KCiAgLmJhZGdlLXdhcm5pbmcgewogICAgQGFwcGx5IGJhZGdlIGJnLXdhcm5pbmctNTAgdGV4dC13YXJuaW5nLTYwMDsKICB9CgogIC8qIOWuieWFqOWMuiAqLwogIC5zYWZlLWFyZWEtdG9wIHsKICAgIHBhZGRpbmctdG9wOiBlbnYoc2FmZS1hcmVhLWluc2V0LXRvcCk7CiAgfQoKICAuc2FmZS1hcmVhLWJvdHRvbSB7CiAgICBwYWRkaW5nLWJvdHRvbTogZW52KHNhZmUtYXJlYS1pbnNldC1ib3R0b20pOwogIH0KCiAgLnBiLXNhZmUgewogICAgcGFkZGluZy1ib3R0b206IGNhbGMoMXJlbSArIGVudihzYWZlLWFyZWEtaW5zZXQtYm90dG9tKSk7CiAgfQoKICAvKiDlupXpg6jlr7zoiKrpq5jluqbljaDkvY0gKi8KICAuYm90dG9tLW5hdi1oZWlnaHQgewogICAgaGVpZ2h0OiBjYWxjKDY0cHggKyBlbnYoc2FmZS1hcmVhLWluc2V0LWJvdHRvbSkpOwogIH0KCiAgLyog5paH5a2X5oiq5patICovCiAgLmxpbmUtY2xhbXAtMSB7CiAgICBAYXBwbHkgb3ZlcmZsb3ctaGlkZGVuIHRleHQtZWxsaXBzaXMgd2hpdGVzcGFjZS1ub3dyYXA7CiAgfQoKICAvKiDliIblibLnur8gKi8KICAuZGl2aWRlciB7CiAgICBAYXBwbHkgaC1weCBiZy1ncmF5LTEwMCB3LWZ1bGw7CiAgfQoKICAvKiDpmpDol4/mu5rliqjmnaEgKi8KICAuc2Nyb2xsYmFyLWhpZGUgewogICAgLW1zLW92ZXJmbG93LXN0eWxlOiBub25lOwogICAgc2Nyb2xsYmFyLXdpZHRoOiBub25lOwogIH0KCiAgLnNjcm9sbGJhci1oaWRlOjotd2Via2l0LXNjcm9sbGJhciB7CiAgICBkaXNwbGF5OiBub25lOwogIH0KfQo=
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply font-sans text-gray-900 antialiased bg-gray-50;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  /* 移动端优化：禁用选中 */
+  @media (max-width: 768px) {
+    * {
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    input, textarea, [contenteditable] {
+      -webkit-user-select: text;
+      user-select: text;
+    }
+  }
+}
+
+@layer components {
+  /* 页面容器 */
+  .page-container {
+    @apply w-full min-h-full px-4 pt-4 pb-24;
+  }
+
+  /* 卡片 */
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100;
+  }
+
+  .card-press {
+    @apply active:scale-[0.98] transition-transform duration-150;
+  }
+
+  /* 按钮 */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg font-medium transition-all active:scale-[0.97];
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-600 text-white active:bg-primary-700;
+  }
+
+  .btn-secondary {
+    @apply btn bg-gray-100 text-gray-700 active:bg-gray-200;
+  }
+
+  .btn-danger {
+    @apply btn bg-danger-50 text-danger-600 active:bg-danger-100;
+  }
+
+  .btn-ghost {
+    @apply btn text-gray-600 active:bg-gray-100;
+  }
+
+  /* 表单输入 */
+  .input {
+    @apply w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all;
+  }
+
+  .input-label {
+    @apply block text-sm font-medium text-gray-700 mb-1.5;
+  }
+
+  /* 标签/徽章 */
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-gray {
+    @apply badge bg-gray-100 text-gray-600;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary-50 text-primary-600;
+  }
+
+  .badge-success {
+    @apply badge bg-success-50 text-success-600;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning-50 text-warning-600;
+  }
+
+  /* 安全区 */
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .pb-safe {
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+  }
+
+  /* 底部导航高度占位 */
+  .bottom-nav-height {
+    height: calc(64px + env(safe-area-inset-bottom));
+  }
+
+  /* 文字截断 */
+  .line-clamp-1 {
+    @apply overflow-hidden text-ellipsis whitespace-nowrap;
+  }
+
+  /* 分割线 */
+  .divider {
+    @apply h-px bg-gray-100 w-full;
+  }
+
+  /* 隐藏滚动条 */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

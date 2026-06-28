@@ -1,1 +1,9 @@
-aW1wb3J0IHsgUHVyY2hhc2VGb3JtIH0gZnJvbSAnQC9jb21wb25lbnRzL1B1cmNoYXNlRm9ybSc7CgpleHBvcnQgZnVuY3Rpb24gQWRkUGFnZSgpIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9InBhZ2UtY29udGFpbmVyIj4KICAgICAgPFB1cmNoYXNlRm9ybSAvPgogICAgPC9kaXY+CiAgKTsKfQo=
+import { PurchaseForm } from '@/components/PurchaseForm';
+
+export function AddPage() {
+  return (
+    <div className="page-container">
+      <PurchaseForm />
+    </div>
+  );
+}

@@ -1,1 +1,50 @@
-aW1wb3J0IHsgUGFja2FnZSwgV2FsbGV0LCBGaWxlVGV4dCB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7CmltcG9ydCB7IHVzZVB1cmNoYXNlU3RvcmUgfSBmcm9tICdAL3N0b3JlL3B1cmNoYXNlU3RvcmUnOwoKZXhwb3J0IGZ1bmN0aW9uIFN1bW1hcnlDYXJkcygpIHsKICBjb25zdCBzdW1tYXJ5ID0gdXNlUHVyY2hhc2VTdG9yZSgoc3RhdGUpID0+IHN0YXRlLmdldFN1bW1hcnkoKSk7CgogIGNvbnN0IGNhcmRzID0gWwogICAgewogICAgICBsYWJlbDogJ+aAu+aVsOmHjycsCiAgICAgIHZhbHVlOiBzdW1tYXJ5LnRvdGFsUXVhbnRpdHksCiAgICAgIGljb246IFBhY2thZ2UsCiAgICAgIGNvbG9yOiAncHJpbWFyeScgYXMgY29uc3QsCiAgICB9LAogICAgewogICAgICBsYWJlbDogJ+aAu+mHkeminScsCiAgICAgIHZhbHVlOiBgwqUke3N1bW1hcnkudG90YWxQcmljZS50b0ZpeGVkKDIpfWAsCiAgICAgIGljb246IFdhbGxldCwKICAgICAgY29sb3I6ICd3YXJuaW5nJyBhcyBjb25zdCwKICAgIH0sCiAgICB7CiAgICAgIGxhYmVsOiAn6K6w5b2V5pWwJywKICAgICAgdmFsdWU6IHN1bW1hcnkudG90YWxDb3VudCwKICAgICAgaWNvbjogRmlsZVRleHQsCiAgICAgIGNvbG9yOiAnc3VjY2VzcycgYXMgY29uc3QsCiAgICB9LAogIF07CgogIGNvbnN0IGNvbG9yU3R5bGVzID0gewogICAgcHJpbWFyeTogJ2JnLXByaW1hcnktNTAgdGV4dC1wcmltYXJ5LTYwMCcsCiAgICB3YXJuaW5nOiAnYmctd2FybmluZy01MCB0ZXh0LXdhcm5pbmctNjAwJywKICAgIHN1Y2Nlc3M6ICdiZy1zdWNjZXNzLTUwIHRleHQtc3VjY2Vzcy02MDAnLAogIH07CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMyBnYXAtMyBtYi00Ij4KICAgICAge2NhcmRzLm1hcCgoY2FyZCkgPT4gewogICAgICAgIGNvbnN0IEljb24gPSBjYXJkLmljb247CiAgICAgICAgcmV0dXJuICgKICAgICAgICAgIDxkaXYga2V5PXtjYXJkLmxhYmVsfSBjbGFzc05hbWU9ImNhcmQgcC0zIGNhcmQtcHJlc3MiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17YHctOCBoLTggcm91bmRlZC1sZyBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBtYi0yICR7Y29sb3JTdHlsZXNbY2FyZC5jb2xvcl19YH0+CiAgICAgICAgICAgICAgPEljb24gY2xhc3NOYW1lPSJ3LTQgaC00IiAvPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS01MDAgbWItMC41Ij57Y2FyZC5sYWJlbH08L3A+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1iYXNlIGZvbnQtYm9sZCB0ZXh0LWdyYXktOTAwIHRydW5jYXRlIj57Y2FyZC52YWx1ZX08L3A+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApOwogICAgICB9KX0KICAgIDwvZGl2PgogICk7Cn0K
+import { Package, Wallet, FileText } from 'lucide-react';
+import { usePurchaseStore } from '@/store/purchaseStore';
+
+export function SummaryCards() {
+  const summary = usePurchaseStore((state) => state.getSummary());
+
+  const cards = [
+    {
+      label: '总数量',
+      value: summary.totalQuantity,
+      icon: Package,
+      color: 'primary' as const,
+    },
+    {
+      label: '总金额',
+      value: `¥${summary.totalPrice.toFixed(2)}`,
+      icon: Wallet,
+      color: 'warning' as const,
+    },
+    {
+      label: '记录数',
+      value: summary.totalCount,
+      icon: FileText,
+      color: 'success' as const,
+    },
+  ];
+
+  const colorStyles = {
+    primary: 'bg-primary-50 text-primary-600',
+    warning: 'bg-warning-50 text-warning-600',
+    success: 'bg-success-50 text-success-600',
+  };
+
+  return (
+    <div className="grid grid-cols-3 gap-3 mb-4">
+      {cards.map((card) => {
+        const Icon = card.icon;
+        return (
+          <div key={card.label} className="card p-3 card-press">
+            <div className={`w-8 h-8 rounded-lg flex items-center justify-center mb-2 ${colorStyles[card.color]}`}>
+              <Icon className="w-4 h-4" />
+            </div>
+            <p className="text-xs text-gray-500 mb-0.5">{card.label}</p>
+            <p className="text-base font-bold text-gray-900 truncate">{card.value}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
+}

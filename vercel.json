@@ -1,1 +1,8 @@
-ewogICJidWlsZENvbW1hbmQiOiAibnBtIHJ1biBidWlsZDphbGwiLAogICJvdXRwdXREaXJlY3RvcnkiOiAiZGlzdCIsCiAgImZyYW1ld29yayI6ICJ2aXRlIiwKICAicmV3cml0ZXMiOiBbCiAgICB7ICJzb3VyY2UiOiAiLygoPyFhcGkvfHVwZGF0ZS8pLiopIiwgImRlc3RpbmF0aW9uIjogIi8iIH0KICBdCn0K
+{
+  "buildCommand": "npm run build:all",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/((?!api/|update/).*)", "destination": "/" }
+  ]
+}

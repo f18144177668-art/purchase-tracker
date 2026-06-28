@@ -1,1 +1,49 @@
-aW1wb3J0IHsgdXNlUHVyY2hhc2VTdG9yZSB9IGZyb20gJ0Avc3RvcmUvcHVyY2hhc2VTdG9yZSc7CmltcG9ydCB7IFN1bW1hcnlDYXJkcyB9IGZyb20gJ0AvY29tcG9uZW50cy9TdW1tYXJ5Q2FyZHMnOwppbXBvcnQgeyBTZWFyY2hGaWx0ZXIgfSBmcm9tICdAL2NvbXBvbmVudHMvU2VhcmNoRmlsdGVyJzsKaW1wb3J0IHsgUHVyY2hhc2VDYXJkIH0gZnJvbSAnQC9jb21wb25lbnRzL1B1cmNoYXNlQ2FyZCc7CmltcG9ydCB7IFBhY2thZ2UgfSBmcm9tICdsdWNpZGUtcmVhY3QnOwoKZXhwb3J0IGZ1bmN0aW9uIEhvbWVQYWdlKCkgewogIGNvbnN0IHB1cmNoYXNlcyA9IHVzZVB1cmNoYXNlU3RvcmUoKHN0YXRlKSA9PiBzdGF0ZS5nZXRGaWx0ZXJlZFB1cmNoYXNlcygpKTsKICBjb25zdCBsb2FkaW5nID0gdXNlUHVyY2hhc2VTdG9yZSgoc3RhdGUpID0+IHN0YXRlLmxvYWRpbmcpOwoKICBpZiAobG9hZGluZykgewogICAgcmV0dXJuICgKICAgICAgPGRpdiBjbGFzc05hbWU9InBhZ2UtY29udGFpbmVyIGZsZXggZmxleC1jb2wiPgogICAgICAgIDxTdW1tYXJ5Q2FyZHMgLz4KICAgICAgICA8U2VhcmNoRmlsdGVyIC8+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImNhcmQgZmxleC0xIGZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHAtOCB0ZXh0LWNlbnRlciI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy0xNCBoLTE0IGJnLXByaW1hcnktNTAgcm91bmRlZC1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIG1iLTMiPgogICAgICAgICAgICA8UGFja2FnZSBjbGFzc05hbWU9InctNyBoLTcgdGV4dC1wcmltYXJ5LTUwMCBhbmltYXRlLXB1bHNlIiAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJ0ZXh0LWJhc2UgZm9udC1tZWRpdW0gdGV4dC1ncmF5LTgwMCBtYi0xIj7liqDovb3kuK0uLi48L2gzPgogICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtZ3JheS01MDAiPuato+WcqOS7juS6keerr+iOt+WPluaVsOaNrjwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICApOwogIH0KCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJwYWdlLWNvbnRhaW5lciI+CiAgICAgIDxTdW1tYXJ5Q2FyZHMgLz4KICAgICAgPFNlYXJjaEZpbHRlciAvPgoKICAgICAge3B1cmNoYXNlcy5sZW5ndGggPT09IDAgPyAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImNhcmQgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcC0xMCB0ZXh0LWNlbnRlciI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy0xNiBoLTE2IGJnLWdyYXktMTAwIHJvdW5kZWQtZnVsbCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBtYi0zIj4KICAgICAgICAgICAgPFBhY2thZ2UgY2xhc3NOYW1lPSJ3LTggaC04IHRleHQtZ3JheS00MDAiIC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxoMyBjbGFzc05hbWU9InRleHQtYmFzZSBmb250LW1lZGl1bSB0ZXh0LWdyYXktODAwIG1iLTEiPuaaguaXoOmHh+i0reiusOW9lTwvaDM+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtc20gdGV4dC1ncmF5LTUwMCI+54K55Ye75LiL5pa54oCc5re75Yqg4oCd5oyJ6ZKu5byA5aeL6K6w5b2VPC9wPgogICAgICAgIDwvZGl2PgogICAgICApIDogKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTMiPgogICAgICAgICAge3B1cmNoYXNlcy5tYXAoKHB1cmNoYXNlKSA9PiAoCiAgICAgICAgICAgIDxQdXJjaGFzZUNhcmQga2V5PXtwdXJjaGFzZS5pZH0gcHVyY2hhc2U9e3B1cmNoYXNlfSAvPgogICAgICAgICAgKSl9CiAgICAgICAgPC9kaXY+CiAgICAgICl9CiAgICA8L2Rpdj4KICApOwp9Cg==
+import { usePurchaseStore } from '@/store/purchaseStore';
+import { SummaryCards } from '@/components/SummaryCards';
+import { SearchFilter } from '@/components/SearchFilter';
+import { PurchaseCard } from '@/components/PurchaseCard';
+import { Package } from 'lucide-react';
+
+export function HomePage() {
+  const purchases = usePurchaseStore((state) => state.getFilteredPurchases());
+  const loading = usePurchaseStore((state) => state.loading);
+
+  if (loading) {
+    return (
+      <div className="page-container flex flex-col">
+        <SummaryCards />
+        <SearchFilter />
+        <div className="card flex-1 flex flex-col items-center justify-center p-8 text-center">
+          <div className="w-14 h-14 bg-primary-50 rounded-full flex items-center justify-center mb-3">
+            <Package className="w-7 h-7 text-primary-500 animate-pulse" />
+          </div>
+          <h3 className="text-base font-medium text-gray-800 mb-1">加载中...</h3>
+          <p className="text-sm text-gray-500">正在从云端获取数据</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="page-container">
+      <SummaryCards />
+      <SearchFilter />
+
+      {purchases.length === 0 ? (
+        <div className="card flex flex-col items-center justify-center p-10 text-center">
+          <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-3">
+            <Package className="w-8 h-8 text-gray-400" />
+          </div>
+          <h3 className="text-base font-medium text-gray-800 mb-1">暂无采购记录</h3>
+          <p className="text-sm text-gray-500">点击下方“添加”按钮开始记录</p>
+        </div>
+      ) : (
+        <div className="space-y-3">
+          {purchases.map((purchase) => (
+            <PurchaseCard key={purchase.id} purchase={purchase} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

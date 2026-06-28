@@ -1,1 +1,52 @@
-aW1wb3J0IHsgdXNlRWZmZWN0IH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAncmVhY3QtZG9tL2NsaWVudCc7CmltcG9ydCB7IEhhc2hSb3V0ZXIsIFJvdXRlcywgUm91dGUgfSBmcm9tICdyZWFjdC1yb3V0ZXItZG9tJzsKaW1wb3J0IHsgdXNlUHVyY2hhc2VTdG9yZSB9IGZyb20gJ0Avc3RvcmUvcHVyY2hhc2VTdG9yZSc7CmltcG9ydCB7IEhlYWRlciB9IGZyb20gJ0AvY29tcG9uZW50cy9IZWFkZXInOwppbXBvcnQgQm90dG9tTmF2IGZyb20gJ0AvY29tcG9uZW50cy9Cb3R0b21OYXYnOwppbXBvcnQgVXBkYXRlQmFubmVyIGZyb20gJ0AvY29tcG9uZW50cy9VcGRhdGVCYW5uZXInOwppbXBvcnQgeyBIb21lUGFnZSB9IGZyb20gJ0AvcGFnZXMvSG9tZVBhZ2UnOwppbXBvcnQgeyBBZGRQYWdlIH0gZnJvbSAnQC9wYWdlcy9BZGRQYWdlJzsKaW1wb3J0IHsgRWRpdFBhZ2UgfSBmcm9tICdAL3BhZ2VzL0VkaXRQYWdlJzsKaW1wb3J0IHsgU3RhdHNQYWdlIH0gZnJvbSAnQC9wYWdlcy9TdGF0c1BhZ2UnOwppbXBvcnQgeyBpc05hdGl2ZUFwcCB9IGZyb20gJ0AvdXRpbHMvcGxhdGZvcm0nOwppbXBvcnQgeyB1cGRhdGVTZXJ2aWNlIH0gZnJvbSAnQC9zZXJ2aWNlcy91cGRhdGVTZXJ2aWNlJzsKaW1wb3J0ICcuL2luZGV4LmNzcyc7CgpmdW5jdGlvbiBBcHBDb250ZW50KCkgewogIGNvbnN0IGxvYWRQdXJjaGFzZXMgPSB1c2VQdXJjaGFzZVN0b3JlKChzdGF0ZSkgPT4gc3RhdGUubG9hZFB1cmNoYXNlcyk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBsb2FkUHVyY2hhc2VzKCk7CgogICAgaWYgKGlzTmF0aXZlQXBwKCkpIHsKICAgICAgdXBkYXRlU2VydmljZS5pbml0KCk7CiAgICB9CiAgfSwgW2xvYWRQdXJjaGFzZXNdKTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJtaW4taC1zY3JlZW4gYmctZ3JheS01MCBmbGV4IGZsZXgtY29sIj4KICAgICAge2lzTmF0aXZlQXBwKCkgJiYgPFVwZGF0ZUJhbm5lciAvPn0KICAgICAgPEhlYWRlciAvPgogICAgICA8bWFpbiBjbGFzc05hbWU9ImZsZXgtMSBvdmVyZmxvdy15LWF1dG8iPgogICAgICAgIDxSb3V0ZXM+CiAgICAgICAgICA8Um91dGUgcGF0aD0iLyIgZWxlbWVudD17PEhvbWVQYWdlIC8+fSAvPgogICAgICAgICAgPFJvdXRlIHBhdGg9Ii9hZGQiIGVsZW1lbnQ9ezxBZGRQYWdlIC8+fSAvPgogICAgICAgICAgPFJvdXRlIHBhdGg9Ii9lZGl0LzppZCIgZWxlbWVudD17PEVkaXRQYWdlIC8+fSAvPgogICAgICAgICAgPFJvdXRlIHBhdGg9Ii9zdGF0cyIgZWxlbWVudD17PFN0YXRzUGFnZSAvPn0gLz4KICAgICAgICA8L1JvdXRlcz4KICAgICAgPC9tYWluPgogICAgICA8Qm90dG9tTmF2IC8+CiAgICA8L2Rpdj4KICApOwp9CgpmdW5jdGlvbiBBcHAoKSB7CiAgcmV0dXJuICgKICAgIDxIYXNoUm91dGVyPgogICAgICA8QXBwQ29udGVudCAvPgogICAgPC9IYXNoUm91dGVyPgogICk7Cn0KCmNyZWF0ZVJvb3QoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSEpLnJlbmRlcig8QXBwIC8+KTsK
+import { useEffect } from 'react';
+import { createRoot } from 'react-dom/client';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import { usePurchaseStore } from '@/store/purchaseStore';
+import { Header } from '@/components/Header';
+import BottomNav from '@/components/BottomNav';
+import UpdateBanner from '@/components/UpdateBanner';
+import { HomePage } from '@/pages/HomePage';
+import { AddPage } from '@/pages/AddPage';
+import { EditPage } from '@/pages/EditPage';
+import { StatsPage } from '@/pages/StatsPage';
+import { isNativeApp } from '@/utils/platform';
+import { updateService } from '@/services/updateService';
+import './index.css';
+
+function AppContent() {
+  const loadPurchases = usePurchaseStore((state) => state.loadPurchases);
+
+  useEffect(() => {
+    loadPurchases();
+
+    if (isNativeApp()) {
+      updateService.init();
+    }
+  }, [loadPurchases]);
+
+  return (
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      {isNativeApp() && <UpdateBanner />}
+      <Header />
+      <main className="flex-1 overflow-y-auto">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/add" element={<AddPage />} />
+          <Route path="/edit/:id" element={<EditPage />} />
+          <Route path="/stats" element={<StatsPage />} />
+        </Routes>
+      </main>
+      <BottomNav />
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <HashRouter>
+      <AppContent />
+    </HashRouter>
+  );
+}
+
+createRoot(document.getElementById('root')!).render(<App />);
