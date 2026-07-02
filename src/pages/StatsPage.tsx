@@ -5,7 +5,6 @@ import DataBackup from '@/components/DataBackup';
 import { getSwitchIcon } from '@/utils/modelUtils';
 import { Package, ShoppingCart, TrendingUp, RefreshCw, Check } from 'lucide-react';
 import { updateService, UpdateResult } from '@/services/updateService';
-import { isNativeApp } from '@/utils/platform';
 import { useState } from 'react';
 
 function VersionInfo() {
@@ -33,22 +32,20 @@ function VersionInfo() {
     <div className="card p-4 mb-4">
       <div className="flex items-center justify-between mb-3">
         <h3 className="text-sm font-bold text-gray-900">版本信息</h3>
-        {isNativeApp() && (
-          <button
-            onClick={handleCheck}
-            disabled={checking}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-primary-600 bg-primary-50 rounded-lg active:scale-95 disabled:opacity-50"
-          >
-            <RefreshCw className={`w-3.5 h-3.5 ${checking ? 'animate-spin' : ''}`} />
-            {checking ? '检查中...' : '检查更新'}
-          </button>
-        )}
+        <button
+          onClick={handleCheck}
+          disabled={checking}
+          className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-primary-600 bg-primary-50 rounded-lg active:scale-95 disabled:opacity-50"
+        >
+          <RefreshCw className={`w-3.5 h-3.5 ${checking ? 'animate-spin' : ''}`} />
+          {checking ? '检查中...' : '检查更新'}
+        </button>
       </div>
 
       <div className="space-y-2 text-sm">
         <div className="flex justify-between">
           <span className="text-gray-500">当前版本</span>
-          <span className="font-mono font-medium text-gray-900">{current.version} (build {current.buildNumber})</span>
+          <span className="font-medium text-gray-900">v{current.buildNumber}</span>
         </div>
 
         {result && (
@@ -57,10 +54,7 @@ function VersionInfo() {
               <div className="space-y-1">
                 <div className="flex items-center gap-1.5 text-success-600 font-medium">
                   <Check className="w-4 h-4" />
-                  发现新版本！
-                </div>
-                <div className="text-xs text-gray-600">
-                  最新：build {result.latestBuild}（当前：build {result.currentBuild}）
+                  发现新版本 v{result.latestBuild}
                 </div>
                 {result.releaseNotes && (
                   <div className="text-xs text-gray-500 mt-1">{result.releaseNotes}</div>
