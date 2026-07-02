@@ -1,15 +1,9 @@
 import { Home, PlusCircle, BarChart3 } from 'lucide-react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { isNativeApp } from '@/utils/platform';
 
 export default function BottomNav() {
   const location = useLocation();
   const navigate = useNavigate();
-
-  // 桌面端不显示底部导航
-  if (!isNativeApp()) {
-    return null;
-  }
 
   const navItems = [
     { path: '/', icon: Home, label: '记录' },
