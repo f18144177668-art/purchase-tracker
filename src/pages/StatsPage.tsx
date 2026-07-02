@@ -3,7 +3,84 @@ import { SummaryCards } from '@/components/SummaryCards';
 import { ChannelIcon } from '@/components/ChannelIcon';
 import DataBackup from '@/components/DataBackup';
 import { getSwitchIcon } from '@/utils/modelUtils';
-import { Package, ShoppingCart, TrendingUp } from 'lucide-react';
+import { Package, ShoppingCart, TrendingUp, RefreshCw, Check } from 'lucide-react';
+import { updateService, UpdateResult } from '@/services/updateService';
+import { isNativeApp } from '@/utils/platform';
+import { useState } from 'react';
+
+function VersionInfo() {
+  const [checking, setChecking] = useState(false);
+  const [result, setResult] = useState<UpdateResult | null>(null);
+  const [error, setError] = useState('');
+
+  const current = updateService.getCurrentVersion();
+
+  const handleCheck = async () => {
+    setChecking(true);
+    setError('');
+    setResult(null);
+    try {
+      const r = await updateService.checkForUpdate();
+      setResult(r);
+    } catch (e: any) {
+      setError(e.message || '检查失败');
+    } finally {
+      setChecking(false);
+    }
+  };
+
+  return (
+    <div className="card p-4 mb-4">
+      <div className="flex items-center justify-between mb-3">
+        <h3 className="text-sm font-bold text-gray-900">版本信息</h3>
+        {isNativeApp() && (
+          <button
+            onClick={handleCheck}
+            disabled={checking}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-primary-600 bg-primary-50 rounded-lg active:scale-95 disabled:opacity-50"
+          >
+            <RefreshCw className={`w-3.5 h-3.5 ${checking ? 'animate-spin' : ''}`} />
+            {checking ? '检查中...' : '检查更新'}
+          </button>
+        )}
+      </div>
+
+      <div className="space-y-2 text-sm">
+        <div className="flex justify-between">
+          <span className="text-gray-500">当前版本</span>
+          <span className="font-mono font-medium text-gray-900">{current.version} (build {current.buildNumber})</span>
+        </div>
+
+        {result && (
+          <div className="mt-3 p-3 rounded-lg bg-gray-50">
+            {result.hasUpdate ? (
+              <div className="space-y-1">
+                <div className="flex items-center gap-1.5 text-success-600 font-medium">
+                  <Check className="w-4 h-4" />
+                  发现新版本！
+                </div>
+                <div className="text-xs text-gray-600">
+                  最新：build {result.latestBuild}（当前：build {result.currentBuild}）
+                </div>
+                {result.releaseNotes && (
+                  <div className="text-xs text-gray-500 mt-1">{result.releaseNotes}</div>
+                )}
+              </div>
+            ) : (
+              <div className="text-xs text-gray-500">已是最新版本 ✅</div>
+            )}
+          </div>
+        )}
+
+        {error && (
+          <div className="mt-3 p-3 rounded-lg bg-danger-50 text-danger-700 text-xs">
+            检查失败：{error}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export function StatsPage() {
   const modelStats = usePurchaseStore((state) => state.getModelStats());
@@ -18,6 +95,7 @@ export function StatsPage() {
     <div className="page-container">
       <SummaryCards />
       <DataBackup />
+      <VersionInfo />
 
       {/* 按类型统计 */}
       <div className="mb-4">
