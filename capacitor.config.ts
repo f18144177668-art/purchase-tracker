@@ -11,6 +11,9 @@ const config: CapacitorConfig = {
     CapacitorUpdater: {
       autoUpdate: false,
     },
+    CapacitorHttp: {
+      enabled: true,
+    },
   },
 };
 

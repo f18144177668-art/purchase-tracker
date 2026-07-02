@@ -2,7 +2,7 @@ import { CapacitorUpdater } from '@capgo/capacitor-updater';
 import { isNativeApp } from '@/utils/platform';
 import appVersion from '../../public/version.json';
 
-const UPDATE_SERVER = 'https://1-nine-eta-34.vercel.app/update';
+const UPDATE_SERVER = 'https://f18144177668-art.github.io/purchase-tracker/update';
 const VERSION_FILE = 'version.json';
 
 export interface VersionInfo {

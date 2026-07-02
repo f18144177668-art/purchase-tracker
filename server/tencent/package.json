@@ -1,0 +1,16 @@
+{
+  "name": "purchase-tracker-tencent-proxy",
+  "version": "1.0.0",
+  "description": "Tencent Cloud SCF proxy for anti-counterfeit and remote logs",
+  "main": "src/index.js",
+  "dependencies": {
+    "cos-nodejs-sdk-v5": "^2.14.0"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.5.18",
+    "tencentcloud-sdk-nodejs": "^4.1.261"
+  },
+  "scripts": {
+    "deploy": "node deploy.js"
+  }
+}

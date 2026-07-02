@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "buildNumber": 2,
-  "updateUrl": "https://1-nine-eta-34.vercel.app/update/",
+  "buildNumber": 5,
+  "updateUrl": "https://f18144177668-art.github.io/purchase-tracker/update/",
   "apkUrl": "",
-  "releaseNotes": "重新设计 APP 页面：优化首页、统计页、表单布局；修复 GitHub API 推送导致的 Base64 编码问题"
+  "releaseNotes": "build 6 hot update test"
 }
