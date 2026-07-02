@@ -40,7 +40,7 @@ function VersionInfo() {
           </div>
           <div>
             <h3 className="font-semibold text-gray-900 text-sm">当前版本</h3>
-            <p className="text-xs text-gray-400 mt-0.5">v{current.buildNumber}</p>
+            <p className="text-xs text-gray-400 mt-0.5">v{current.version}</p>
           </div>
         </div>
         <button
@@ -59,7 +59,7 @@ function VersionInfo() {
             <div className="space-y-1">
               <div className="flex items-center gap-1.5 text-primary-600 font-medium text-sm">
                 <Check className="w-4 h-4" />
-                发现新版本 v{result.latestBuild}
+                发现新版本 v{result.latestVersion}
               </div>
               {result.releaseNotes && (
                 <p className="text-xs text-gray-500 ml-5">{result.releaseNotes}</p>
