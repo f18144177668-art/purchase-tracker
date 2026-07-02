@@ -10,8 +10,6 @@ import { AddPage } from '@/pages/AddPage';
 import { EditPage } from '@/pages/EditPage';
 import { StatsPage } from '@/pages/StatsPage';
 import { LogsPage } from '@/pages/LogsPage';
-import { isNativeApp } from '@/utils/platform';
-import { updateService } from '@/services/updateService';
 import './index.css';
 
 function AppContent() {
@@ -19,15 +17,11 @@ function AppContent() {
 
   useEffect(() => {
     loadPurchases();
-
-    if (isNativeApp()) {
-      updateService.init();
-    }
   }, [loadPurchases]);
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
-      {isNativeApp() && <UpdateBanner />}
+    <div className="min-h-screen flex flex-col" style={{ background: '#f0f4f8' }}>
+      <UpdateBanner />
       <Header />
       <main className="flex-1 overflow-y-auto">
         <Routes>
