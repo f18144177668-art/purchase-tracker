@@ -58,7 +58,7 @@ export default function UpdateBanner() {
             <div>
               <div className="font-semibold text-gray-900">发现新版本</div>
               <div className="text-xs text-gray-500">
-                {updateInfo?.currentVersion} → {updateInfo?.latestVersion}
+                build {updateInfo?.currentBuild} → build {updateInfo?.latestBuild}
               </div>
             </div>
           </div>

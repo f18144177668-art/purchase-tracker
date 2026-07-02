@@ -19,6 +19,8 @@ export interface UpdateResult {
   hasUpdate: boolean;
   currentVersion: string;
   latestVersion: string;
+  currentBuild: number;
+  latestBuild: number;
   releaseNotes?: string;
   apkUrl?: string;
   canHotUpdate: boolean;
@@ -38,7 +40,7 @@ export class UpdateService {
   async init(): Promise<void> {
     if (!isNativeApp()) return;
 
-    // ?? Capgo ?? bundle ?????
+    // 向 Capgo 通知当前 bundle 已就绪
     await CapacitorUpdater.notifyAppReady();
 
     this.currentVersion = {
@@ -56,8 +58,9 @@ export class UpdateService {
 
   async checkForUpdate(): Promise<UpdateResult> {
     try {
-      const response = await fetch(`${UPDATE_SERVER}/${VERSION_FILE}?t=${Date.now()}`);
-      if (!response.ok) throw new Error('????????');
+      const url = `${UPDATE_SERVER}/${VERSION_FILE}?t=${Date.now()}`;
+      const response = await fetch(url);
+      if (!response.ok) throw new Error('无法获取版本信息');
       const latestVersion: VersionInfo = await response.json();
 
       const current = this.getCurrentVersion();
@@ -68,16 +71,21 @@ export class UpdateService {
         hasUpdate,
         currentVersion: current.version,
         latestVersion: latestVersion.version,
+        currentBuild: current.buildNumber,
+        latestBuild: latestVersion.buildNumber,
         releaseNotes: latestVersion.releaseNotes,
         apkUrl: latestVersion.apkUrl,
         canHotUpdate,
       };
     } catch (error) {
-      console.error('??????:', error);
+      console.error('检查更新失败:', error);
+      const current = this.getCurrentVersion();
       return {
         hasUpdate: false,
-        currentVersion: this.getCurrentVersion().version,
-        latestVersion: this.getCurrentVersion().version,
+        currentVersion: current.version,
+        latestVersion: current.version,
+        currentBuild: current.buildNumber,
+        latestBuild: current.buildNumber,
         canHotUpdate: false,
       };
     }
@@ -87,15 +95,16 @@ export class UpdateService {
     if (!isNativeApp()) return false;
 
     try {
-      const versionResponse = await fetch(`${UPDATE_SERVER}/${VERSION_FILE}?t=${Date.now()}`);
-      if (!versionResponse.ok) throw new Error('????????');
+      const url = `${UPDATE_SERVER}/${VERSION_FILE}?t=${Date.now()}`;
+      const versionResponse = await fetch(url);
+      if (!versionResponse.ok) throw new Error('无法获取版本信息');
       const latestVersion: VersionInfo = await versionResponse.json();
 
       if (!latestVersion.zipUrl) {
-        throw new Error('?????????');
+        throw new Error('未找到更新包下载地址');
       }
 
-      // Capgo ?????????? bundle id
+      // 用 buildNumber 作为 Capgo 的 bundle id
       const bundleId = latestVersion.buildNumber;
 
       if (onProgress) onProgress(0);
@@ -107,13 +116,17 @@ export class UpdateService {
 
       if (onProgress) onProgress(100);
 
-      // ?????????? bundle
+      // 设置为当前 bundle，然后立即重启加载新 bundle
       await CapacitorUpdater.set({ id: bundle.id });
+
+      setTimeout(() => {
+        CapacitorUpdater.reload();
+      }, 500);
 
       this.currentVersion = latestVersion;
       return true;
     } catch (error) {
-      console.error('??????:', error);
+      console.error('下载更新失败:', error);
       return false;
     }
   }
