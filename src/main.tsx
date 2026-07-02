@@ -9,6 +9,7 @@ import { HomePage } from '@/pages/HomePage';
 import { AddPage } from '@/pages/AddPage';
 import { EditPage } from '@/pages/EditPage';
 import { StatsPage } from '@/pages/StatsPage';
+import { LogsPage } from '@/pages/LogsPage';
 import { isNativeApp } from '@/utils/platform';
 import { updateService } from '@/services/updateService';
 import './index.css';
@@ -34,6 +35,7 @@ function AppContent() {
           <Route path="/add" element={<AddPage />} />
           <Route path="/edit/:id" element={<EditPage />} />
           <Route path="/stats" element={<StatsPage />} />
+          <Route path="/logs" element={<LogsPage />} />
         </Routes>
       </main>
       <BottomNav />

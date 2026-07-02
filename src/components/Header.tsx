@@ -1,4 +1,4 @@
-import { BarChart3, Home, Plus } from 'lucide-react';
+import { BarChart3, Home, Plus, FileText } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { isNativeApp } from '@/utils/platform';
 
@@ -7,6 +7,7 @@ export function Header() {
   const isHome = location.pathname === '/';
   const isStats = location.pathname === '/stats';
   const isAdd = location.pathname === '/add';
+  const isLogs = location.pathname === '/logs';
 
   // APP 端使用更紧凑的头部
   if (isNativeApp()) {
@@ -30,6 +31,14 @@ export function Header() {
               }`}
             >
               <Plus className="w-5 h-5" />
+            </Link>
+            <Link
+              to="/logs"
+              className={`p-2 rounded-lg transition-colors ${
+                isLogs ? 'bg-primary-50 text-primary-600' : 'text-gray-500'
+              }`}
+            >
+              <FileText className="w-5 h-5" />
             </Link>
           </div>
         </div>
